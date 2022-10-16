@@ -13,6 +13,7 @@ module.exports = {
       buttons_main: "#47B5FF",
       fonts_secondary: "#256D85",
       details: "#A85CF9",
+      black: '#000'
     },
     extend: {},
   },

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transform-to-children:hover .children-custom-class {
+  transform: translateY(22%);
+  transform: scale(10px);
+}
+.children-custom-class:hover {
+ transform: none;
+}
+.children-custom-class span {
+  pointer-events: none;
+}
