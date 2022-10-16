@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      background_main: "#e6f7ff",
-      background_main_l: "#ebf9ff",
+      background_main: "#ebf9ff",
+      background_main_l: "#f4fafd",
       fonts_main: "#06283D",
       buttons_main: "#47B5FF",
       fonts_secondary: "#256D85",
