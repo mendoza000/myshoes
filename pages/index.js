@@ -9,7 +9,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="mx-4 mt-4">
+      <div className="">
         <div className="flex justify-center gap-6">
           <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center border-b-2 border-b-buttons_main">
             News
@@ -22,7 +22,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="grid items-center justify-center grid-cols-2 gap-6 my-6">
+        <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
           <Card />
           <Card />
           <Card />
