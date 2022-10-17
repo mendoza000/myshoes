@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.transform-to-children .children-custom-class {
+  transform: scale(1.21);
+}
 .transform-to-children:hover .children-custom-class {
-  transform: translateY(22%);
-  transform: scale(10px);
 }
 .children-custom-class:hover {
- transform: none;
+  transform: none;
 }
 .children-custom-class span {
   pointer-events: none;
+}
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 0px;
 }
