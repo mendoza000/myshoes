@@ -3,18 +3,17 @@ import { HiOutlineStar, HiStar } from "react-icons/hi";
 
 const Card = () => {
   return (
-    <div className="transform-to-children flex flex-col items-center justify-center pb-4 rounded-md shadow-xl bg-background_main_l">
-      <div className="children-custom-class mt-[-80%] translate-y-[23%] transition-transform pointer-events-none">
+    <div className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow">
+      <div className="children-custom-class mt-[-35%] transition-transform pointer-events-none -mb-7 -ml-4">
         <Image
           src={"/air-force-1-07-x1.png"}
           width={"300"}
           height={"330"}
           alt={"air-force"}
-          className="-rotate-12 pointer-events-none"
+          className="pointer-events-none -rotate-12"
         />
-
       </div>
-      <h4 className="min-w-full ml-8 text-xl font-semibold text-left">
+      <h4 className="min-w-full mt-2 ml-8 text-xl font-semibold text-left">
         Air force 1
       </h4>
       <div className="flex items-center justify-around min-w-full">
