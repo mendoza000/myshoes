@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { HiOutlineStar, HiStar } from "react-icons/hi";
 
-const Card = () => {
+const Card = ({image}) => {
+  console.log(image)
   return (
     <div className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer " >
       <div className="children-custom-class mt-[-35%] transition-transform pointer-events-none -mb-7 -ml-4 z-20">
         <Image
-          src={"/air-force-1-07-x1.png"}
+          src={image}
           width={"300"}
           height={"330"}
           alt={"air-force"}

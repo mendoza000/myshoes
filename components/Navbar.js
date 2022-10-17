@@ -15,11 +15,11 @@ export default function Navbar() {
   }
 
   return <>
-    <div className={`fixed top-4 left-4${!navShowing ? '' : ' opacity-0 '} transition-opacity`}>
+    <div className={`fixed top-4 left-4${!navShowing ? '' : ' opacity-0 '} transition-opacity z-40 cursor-pointer `}>
       <CiGrid41 className='w-8 h-8' onClick={handleOpenNavbar} />
     </div>
     <nav className={`w-2/3 bg-background_main transition-transform duration-300 h-full fixed flex flex-col justify-between
-    top-0 left-0 pointer-events-none -translate-x-full text-fonts_main font-semibold max-w-[300px] min-w-[220px] z-20
+    top-0 left-0 pointer-events-none -translate-x-full text-fonts_main font-semibold max-w-[300px] min-w-[220px] z-50
     ${navShowing ? ' transform-none pointer-events-auto ' : ''}`} >
       <div className='w-full'>
         <div className='w-full h-14 grid grid-cols-[15%,85%] place-content-center cursor-pointer transition-colors
@@ -56,7 +56,7 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-    <section className={`w-screen h-screen transition-opacity duration-300 pointer-events-none opacity-0 bg-black fixed z-10
+    <section className={`w-screen h-screen transition-opacity duration-300 pointer-events-none opacity-0 bg-black fixed z-40
     top-0 left-0${navShowing ? ' pointer-events-auto opacity-80 ' : ''}`}
       onClick={handleNavClose} />
   </>
