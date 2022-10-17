@@ -1,4 +1,5 @@
 import Card from "../components/home/Card";
+import data from "./api/data.json"
 
 export default function Home() {
   return (
@@ -23,10 +24,11 @@ export default function Home() {
         </div>
 
         <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {
+            data.map(shoe => {
+              return <Card key={shoe.id} image={shoe.source}/>
+            })
+          }
         </div>
       </div>
     </div>
