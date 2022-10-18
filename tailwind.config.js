@@ -13,9 +13,14 @@ module.exports = {
       buttons_main: "#47B5FF",
       fonts_secondary: "#256D85",
       details: "#A85CF9",
-      black: '#000'
+      black: '#000',
+      gray: '#edf2f4'
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background-nike': 'url("/nike-logo.svg")'
+      }
+    },
   },
   plugins: [],
 };
