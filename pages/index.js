@@ -26,7 +26,7 @@ export default function Home() {
         <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
           {
             data.map(shoe => {
-              return <Card key={shoe.id} image={shoe.source}/>
+              return <Card key={shoe.id} image={shoe.source} name={shoe.name}/>
             })
           }
         </div>

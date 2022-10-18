@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { HiOutlineStar, HiStar } from "react-icons/hi";
 
-const Card = ({image}) => {
+const Card = ({image, name}) => {
   console.log(image)
   return (
     <div className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer " >
@@ -14,8 +14,8 @@ const Card = ({image}) => {
           className="pointer-events-none -rotate-12 "
         />
       </div>
-      <h4 className="min-w-full mt-2 ml-8 text-xl font-semibold text-left z-20 fill-black">
-        Air force 1
+      <h4 className="min-w-full mt-2 ml-8 text-xl font-semibold text-left z-20 fill-black ">
+        {name}
       </h4>
       <div className="flex items-center justify-around min-w-full">
         <p className="text-lg font-semibold text-left text-fonts_main z-20">
