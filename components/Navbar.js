@@ -14,6 +14,20 @@ export default function Navbar() {
     setNavShowing(false)
   }
 
+  // useEffect(() => {
+  //   const handleResize = e => {
+  //     console.log('redimesión', e.target.innerWidth, e.target.innerHeight)
+  //   }
+  //   window.addEventListener('resize', handleResize)
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize)
+  //   }
+  // }, [])
+
+  // ^ PARA CHECKEAR EL RESIZE Y APLICAR RENDERIZADO CONDICIONAL DE LA NAVBAR
+
+
   return <>
     <div className={`fixed top-4 left-4${!navShowing ? '' : ' opacity-0 '} transition-opacity z-40 cursor-pointer `}>
       <CiGrid41 className='w-8 h-8' onClick={handleOpenNavbar} />
@@ -22,11 +36,14 @@ export default function Navbar() {
     top-0 left-0 pointer-events-none -translate-x-full text-fonts_main font-semibold max-w-[300px] min-w-[220px] z-50
     ${navShowing ? ' transform-none pointer-events-auto ' : ''}`} >
       <div className='w-full'>
-        <div className='w-full h-14 grid grid-cols-[15%,85%] place-content-center cursor-pointer transition-colors
+        <a href='/'>
+          {/* REEMPLAZAR POR LINK ^ */}
+          <div className='w-full h-14 grid grid-cols-[15%,85%] place-content-center cursor-pointer transition-colors
          hover:bg-buttons_main'>
-          <AiOutlineHome className='w-8 h-8' />
-          <span className='text-lg flex content-center '>Home</span>
-        </div>
+            <AiOutlineHome className='w-8 h-8' />
+            <span className='text-lg flex content-center '>Home</span>
+          </div>
+        </a>
         <div className='w-full h-14 grid grid-cols-[15%,85%] place-content-center cursor-pointer transition-colors
          hover:bg-buttons_main'>
           <AiOutlineShoppingCart className='h-8 w-8' />

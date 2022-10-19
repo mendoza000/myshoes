@@ -17,9 +17,12 @@ module.exports = {
       gray: '#edf2f4'
     },
     extend: {
-      backgroundImage: {
-        'background-nike': 'url("/nike-logo.svg")'
-      }
+      fontFamily: {
+        Rubik: ["Rubik", "sans-serif"]
+      },
+    screens: {
+      'tall': {'raw': '(min-height: 760px)'}
+    }
     },
   },
   plugins: [],

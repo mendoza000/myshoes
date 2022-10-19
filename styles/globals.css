@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: "Rubik", system-ui, sans-serif;
+  }
+}
+
 .transform-to-children .children-custom-class {
   transform: scale(1.21);
 }
@@ -21,10 +27,6 @@
 }
 .children-custom-class span {
   pointer-events: none;
-}
-.image-correct-centering span {
-  margin-left: -5rem!important;
-  /* Esto es para corregir el centrado de las imágenes de las zapatillas */
 }
 .custom-shadow {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 0px;
