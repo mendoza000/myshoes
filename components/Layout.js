@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   return (
     <>
-      {/* Aqui va la navbar para que sea global */}
       <Navbar />
       <main>{children}</main>
       <BottomNavbar />

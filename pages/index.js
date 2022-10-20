@@ -24,10 +24,12 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="grid items-center justify-center w-full h-full grid-cols-2 gap-6 p-5 my-8 overflow-x-hidden">
-          {data.map((shoe) => {
-            return <Card key={shoe.id} {...shoe} />;
-          })}
+        <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
+          {
+            data.map(shoe => {
+              return <Card key={shoe.id} image={shoe.cardPhoto} id={shoe.id} name={shoe.name}/>
+            })
+          }
         </div>
       </div>
     </div>
