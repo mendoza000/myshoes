@@ -2,7 +2,7 @@ import Image from "next/image";
 import { HiOutlineStar, HiStar } from "react-icons/hi";
 
 
-const Card = ({ source, name, id, rating, price }) => {
+const Card = ({ image, name, id, rating, price }) => {
   const map = ["", "", "", "", ""];
 
   return (

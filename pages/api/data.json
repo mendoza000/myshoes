@@ -11,8 +11,8 @@
     "isFromMan": true,
     "id": 1,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
-    "IntRating": 4,
+    "rating": [true, true, true, true, false],
+    "IntRating": 4
   },
   {
     "name": "Jordan ADG 4",
@@ -27,8 +27,8 @@
     "id": 2,
 
     "price": 182.55,
-    "rating": [true, true, true, true, true]
-    "IntRating": 4,
+    "rating": [true, true, true, true, true],
+    "IntRating": 4
   },
   {
     "name": "Nike Air Max 90 Futura",
