@@ -8,7 +8,7 @@ const BottomNavbar = () => {
   const { route } = router;
 
   return (
-    <div className="bottom-navbar absolute bottom-0 min-w-full py-4 custom-shadow bg-background_main_l">
+    <div className="bottom-navbar fixed bottom-0 min-w-full py-4 custom-shadow bg-background_main_l">
       <ul className="flex items-center justify-around min-w-full">
         <li>
           <Link href={"/"}>

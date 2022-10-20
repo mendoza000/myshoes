@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { HiOutlineStar, HiStar } from "react-icons/hi";
 
-const Card = ({ source, name, id, rating, price }) => {
+const Card = ({ image, name, id, rating, price }) => {
   const router = useRouter();
 
   const handleOpenProduct = () => {
@@ -20,7 +20,7 @@ const Card = ({ source, name, id, rating, price }) => {
         {/* ^ REEMPLAZAR POR LINK */}
         <div className="children-custom-class mt-[-65%] mb-[10%] transition-transform pointer-events-none z-20">
           <Image
-            src={source}
+            src={image}
             width={220}
             height={220}
             alt={"air-force"}
