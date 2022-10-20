@@ -16,15 +16,15 @@ const Card = ({ image, name, id, rating, price }) => {
       onClick={handleOpenProduct}
       className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer "
     >
-      <a className="h-full w-full z-20">
+      <a className="h-full w-full z-30">
         {/* ^ REEMPLAZAR POR LINK */}
-        <div className="children-custom-class mt-[-65%] mb-[10%] transition-transform pointer-events-none z-20">
+        <div className="children-custom-class mt-[-65%] mb-[10%] transition-transform pointer-events-none z-30">
           <Image
             src={image}
             width={220}
             height={220}
             alt={"air-force"}
-            className="pointer-events-none -rotate-12 -translate-x-4 "
+            className="pointer-events-none -rotate-12 -translate-x-4 z-30 "
           />
         </div>
         <div className="relative w-full h-6">
@@ -46,8 +46,8 @@ const Card = ({ image, name, id, rating, price }) => {
             <HiStar className="z-20 fill-fonts_main" />
           </div>
         </div>
-        <div className="absolute top-0 left-0 z-10 w-full h-full overflow-hidden rounded-md">
-          <div className="z-10 skewed-bg bg-buttons_main" />
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-md">
+          <div className="skewed-bg -z-10 bg-buttons_main" />
         </div>
       </a>
     </div>

@@ -1,6 +1,6 @@
 [
   {
-    "name": "Nike Air Jordan 9 Retro",
+    "name": "Air Jordan 9 Retro",
     "source": "/Air Jordan 9 Retro/main.png",
     "cardPhoto": "/Air Jordan 9 Retro/main-card.png",
     "secondaryPhotos": [
@@ -31,7 +31,7 @@
     "IntRating": 4
   },
   {
-    "name": "Nike Air Max 90 Futura",
+    "name": "Air Max 90 Futura",
     "source": "/Nike Air Max 90 Futura w/main.png",
     "cardPhoto": "/Nike Air Max 90 Futura w/main-card.png",
     "secondaryPhotos": [
@@ -45,7 +45,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Max Bella TR 5",
+    "name": "Air Max Bella TR 5",
     "source": "/Nike Air Max Bella TR 5 w/main.png",
     "cardPhoto": "/Nike Air Max Bella TR 5 w/main-card.png",
     "secondaryPhotos": [
@@ -59,7 +59,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Winflo 9",
+    "name": "Air Winflo 9",
     "source": "/Nike Air Winflo 9 w/main.png",
     "cardPhoto": "/Nike Air Winflo 9 w/main-card.png",
     "secondaryPhotos": [
@@ -73,7 +73,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Zoom Pegasus 39",
+    "name": "Air Zoom Pegasus 39",
     "source": "/Nike Air Zoom Pegasus 39 w/main.png",
     "cardPhoto": "/Nike Air Zoom Pegasus 39 w/main-card.png",
     "secondaryPhotos": [
@@ -87,7 +87,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Zoom Pegasus FlyEase",
+    "name": "Air Zoom Pegasus FlyEase",
     "source": "/Nike Air Zoom Pegasus FlyEase w/main.png",
     "cardPhoto": "/Nike Air Zoom Pegasus FlyEase w/main-card.png",
     "secondaryPhotos": [
@@ -101,7 +101,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Zoom Structure 24",
+    "name": "Air Zoom Structure 24",
     "source": "/Nike Air Zoom Structure 24 w/main.png",
     "cardPhoto": "/Nike Air Zoom Structure 24 w/main-card.png",
     "secondaryPhotos": [
@@ -115,7 +115,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Air Zoom SuperRep 3",
+    "name": "Air Zoom SuperRep 3",
     "source": "/Nike Air Zoom SuperRep 3 w/main.png",
     "cardPhoto": "/Nike Air Zoom SuperRep 3 w/main-card.png",
     "secondaryPhotos": [
@@ -129,7 +129,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Free Run 5.0",
+    "name": "Free Run 5.0",
     "source": "/Nike Free Run 5.0 w/main.png",
     "cardPhoto": "/Nike Free Run 5.0 w/main-card.png",
     "secondaryPhotos": [
@@ -143,7 +143,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike React Pegasus Trail 4 GORE-TEX",
+    "name": "React Pegasus Trail 4 GORE-TEX",
     "source": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png",
     "cardPhoto": "/Nike React Pegasus Trail 4 GORE-TEX w/main-card.png",
     "secondaryPhotos": [
@@ -157,7 +157,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike React Pegasus Trail 4",
+    "name": "React Pegasus Trail 4",
     "source": "/Nike React Pegasus Trail 4 w/main.png",
     "cardPhoto": "/Nike React Pegasus Trail 4 w/main-card.png",
     "secondaryPhotos": [
@@ -171,7 +171,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Metcon 8",
+    "name": "Metcon 8",
     "source": "/Nike Metcon 8 w/main.png",
     "cardPhoto": "/Nike Metcon 8 w/main-card.png",
     "secondaryPhotos": [
@@ -185,7 +185,7 @@
     "rating": [true, true, true, false, false]
   },
   {
-    "name": "Nike Kyrie Low 5",
+    "name": "Kyrie Low 5",
     "source": "/Kyrie Low 5/main.png",
     "cardPhoto": "/Kyrie Low 5/main-card.png",
     "secondaryPhotos": [
@@ -199,7 +199,7 @@
     "rating": [true, true, true, true, false]
   },
   {
-    "name": "Nike Air Max Terrascape Plus",
+    "name": "Air Max Terrascape Plus",
     "source": "/Nike Air Max Terrascape Plus/main.png",
     "cardPhoto": "/Nike Air Max Terrascape Plus/main-card.png",
     "secondaryPhotos": [
@@ -213,7 +213,7 @@
     "rating": [true, true, true, true, false]
   },
   {
-    "name": "Nike Air Max Plus",
+    "name": "Air Max Plus",
     "source": "/Nike Air Max Plus/main.png",
     "cardPhoto": "/Nike Air Max Plus/main-card.png",
     "secondaryPhotos": [
@@ -227,7 +227,7 @@
     "rating": [true, true, true, true, false]
   },
   {
-    "name": "Nike Lunar Force",
+    "name": "Lunar Force",
     "source": "/Nike Lunar Force/main.png",
     "cardPhoto": "/Nike Lunar Force/main-card.png",
     "secondaryPhotos": [
@@ -241,7 +241,7 @@
     "rating": [true, true, true, true, false]
   },
   {
-    "name": "Nike SFB 6 Leather",
+    "name": "SFB 6 Leather",
     "source": "/Nike SFB 6 Leather/main.png",
     "cardPhoto": "/Nike SFB 6 Leather/main-card.png",
     "secondaryPhotos": [
@@ -255,7 +255,7 @@
     "rating": [true, true, true, true, false]
   },
   {
-    "name": "Nike Air Vapormax Plus",
+    "name": "Air Vapormax Plus",
     "source": "/nike-air-vapormax-plus/main.png",
     "cardPhoto": "/nike-air-vapormax-plus/main-card.png",
     "secondaryPhotos": [
