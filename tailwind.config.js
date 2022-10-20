@@ -21,7 +21,7 @@ module.exports = {
         Rubik: ["Rubik", "sans-serif"]
       },
     screens: {
-      'tall': {'raw': '(min-height: 760px)'}
+      'tall': {'raw': '(min-height: 785px)'}
     }
     },
   },
