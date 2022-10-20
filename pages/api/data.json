@@ -12,6 +12,7 @@
     "id": 1,
     "price": 127.99,
     "rating": [true, true, true, true, false]
+    "IntRating": 4,
   },
   {
     "name": "Jordan ADG 4",
@@ -24,8 +25,10 @@
     "description": "If you want to create a casual look, you can match it with this shoes. Putting on these means that you are still young and full of energy. The combo looks pretty good and is easy to create without much effort.",
     "isFromMan": true,
     "id": 2,
+
     "price": 182.55,
     "rating": [true, true, true, true, true]
+    "IntRating": 4,
   },
   {
     "name": "Nike Air Max 90 Futura",

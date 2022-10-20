@@ -23,7 +23,7 @@
   transform-origin: top right;
 }
 .transform-to-children:hover .children-custom-class {
-  transform: scale(1.31) translateY(-5%) ;
+  transform: scale(1.31) translateY(-5%);
 }
 .children-custom-class span {
   pointer-events: none;
