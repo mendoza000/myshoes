@@ -24,6 +24,16 @@ module.exports = {
       'tall': {'raw': '(min-height: 785px)'}
     }
     },
+    keyframes: {
+      'splashBounce': {
+        '0%': {'transform': 'translateY(0%)'},
+        '50%': {'transform': 'translateY(-6%)'},
+        '100%': {'transform': 'translateY(100%)'}
+      }
+    },
+    animation: {
+      'splashBounce': 'splashBounce .7s ease-in-out'
+    }
   },
   plugins: [],
 };
