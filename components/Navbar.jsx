@@ -115,7 +115,7 @@ export default function Navbar() {
           className={`fixed top-4 left-4 z-40 cursor-pointer `}
           onClick={handleBack}
         >
-          <AiOutlineLeft className="w-8 h-8" onClick={handleOpenNavbar} />
+          <AiOutlineLeft className="w-8 h-8" />
         </div>
       )}
     </>
