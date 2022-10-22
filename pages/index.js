@@ -5,9 +5,8 @@ import Card2 from "@components/home/Card2";
 import useImages from "hooks/useImages";
 
 export default function Home() {
-
-  const { imagesLoaded, imagesLoadError } = useImages({ data })
-  console.log(imagesLoaded)
+  const { imagesLoaded, imagesLoadError } = useImages({ data });
+  console.log(imagesLoaded);
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
@@ -16,8 +15,13 @@ export default function Home() {
 
   return (
     <>
-      <div className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
-       bg-background_main_l ${imagesLoaded && ' animate-splashBounce pointer-events-none translate-y-full '}`}>
+      <div
+        className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
+       bg-background_main_l ${
+         imagesLoaded &&
+         " animate-splashBounce pointer-events-none translate-y-full "
+       }`}
+      >
         <div class="waveform">
           <div class="waveform__bar"></div>
           <div class="waveform__bar"></div>
@@ -45,20 +49,11 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
-          {data.map((shoe) => {
-            return (
-              // <Card
-              //   key={shoe.id}
-              //   image={shoe.cardPhoto}
-              //   id={shoe.id}
-              //   rating={shoe.rating}
-              //   price={shoe.price}
-              //   name={shoe.name}
-              // />
-              <Card2 key={shoe.id} {...shoe} />
-            );
-          })}
+          <div className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
+            {data.map((shoe) => {
+              return <Card2 key={shoe.id} {...shoe} />;
+            })}
+          </div>
         </div>
       </div>
     </>
