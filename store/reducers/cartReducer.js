@@ -16,9 +16,7 @@ const initialState = [
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.CART_ADD:
-      let x = state;
-      x.push(action.payload);
-      return x;
+      return [...state, action.payload];
 
     case types.CART_REMOVE:
       let y = state.filter((e) => e.id !== action.payload.id);

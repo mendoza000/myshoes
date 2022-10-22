@@ -14,11 +14,11 @@ const Card = ({ image, name, id, rating, price }) => {
   return (
     <div
       onClick={handleOpenProduct}
-      className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer "
+      className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer min-h-[13rem]"
     >
       <a className="h-full w-full z-30">
         {/* ^ REEMPLAZAR POR LINK */}
-        <div className="children-custom-class mt-[-65%] mb-[10%] transition-transform pointer-events-none z-30">
+        <div className="children-custom-class mt-[-38%] mb-[10%] transition-transform pointer-events-none z-30">
           <Image
             src={image}
             width={220}
@@ -32,7 +32,7 @@ const Card = ({ image, name, id, rating, price }) => {
             {name}
           </h4>
         </div>
-        <div className="flex items-center justify-around min-w-full">
+        <div className="flex flex-col items-center min-w-full">
           <p className="z-20 text-lg font-semibold text-left text-fonts_main">
             <span className="z-20">$</span>
             {price}

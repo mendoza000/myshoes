@@ -1,28 +1,35 @@
-import Card from "../components/home/Card";
 import data from "./api/data.json";
 import "animate.css";
 import { useEffect } from "react";
+import Card2 from "@components/home/Card2";
 import useImages from "hooks/useImages";
+import { useDispatch } from "react-redux";
+import { getFavs } from "@store/actions/fav";
 
 export default function Home() {
-
-  const { imagesLoaded, imagesLoadError } = useImages({ data })
-  console.log(imagesLoaded)
+  const dispatch = useDispatch();
+  const { imagesLoaded, imagesLoadError } = useImages({ data });
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
     bottomNav.classList.remove("hidden");
+    dispatch(getFavs());
   }, []);
 
   return (
     <>
-      <div className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
-       bg-background_main_l ${imagesLoaded && ' animate-splashBounce pointer-events-none translate-y-full '}`}>
-        <div class="waveform">
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
+      <div
+        className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
+       bg-background_main_l ${
+         imagesLoaded &&
+         " animate-splashBounce pointer-events-none translate-y-full "
+       }`}
+      >
+        <div className="waveform">
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
         </div>
       </div>
       <div className="container min-h-screen bg-background_main animate__animated animate__fadeIn animate__faster">
@@ -45,19 +52,9 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
+          <div className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
             {data.map((shoe) => {
-
-              return (
-                <Card
-                  key={shoe.id}
-                  image={shoe.cardPhoto}
-                  id={shoe.id}
-                  rating={shoe.rating}
-                  price={shoe.price}
-                  name={shoe.name}
-                />
-              );
+              return <Card2 key={shoe.id} {...shoe} />;
             })}
           </div>
         </div>
