@@ -1,11 +1,11 @@
 [
   {
     "name": "Air Jordan 9 Retro",
-    "source": "/Air Jordan 9 Retro/main.png",
     "cardPhoto": "/Air Jordan 9 Retro/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Air Jordan 9 Retro/both.png", "id": 1 },
-      { "src": "/Air Jordan 9 Retro/down.png", "id": 2 }
+      {"src": "/Air Jordan 9 Retro/main.png", "id": 1},
+      { "src": "/Air Jordan 9 Retro/both.png", "id": 2 },
+      { "src": "/Air Jordan 9 Retro/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -16,11 +16,11 @@
   },
   {
     "name": "Jordan ADG 4",
-    "source": "/Jordan ADG 4/main.png",
     "cardPhoto": "/Jordan ADG 4/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Jordan ADG 4/both.png", "id": 1 },
-      { "src": "/Jordan ADG 4/down.png", "id": 2 }
+      {"src": "/Jordan ADG 4/main.png", "id": 1},
+      { "src": "/Jordan ADG 4/both.png", "id": 2 },
+      { "src": "/Jordan ADG 4/down.png", "id": 3 }
     ],
     "description": "If you want to create a casual look, you can match it with this shoes. Putting on these means that you are still young and full of energy. The combo looks pretty good and is easy to create without much effort.",
     "isFromMan": true,
@@ -32,13 +32,13 @@
   },
   {
     "name": "Air Max 90 Futura",
-    "source": "/Nike Air Max 90 Futura w/main.png",
     "cardPhoto": "/Nike Air Max 90 Futura w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Max 90 Futura w/both.png", "id": 1 },
-      { "src": "/Nike Air Max 90 Futura w/down.png", "id": 2 }
+      {"src": "/Nike Air Max 90 Futura w/main.png", "id": 1},
+      { "src": "/Nike Air Max 90 Futura w/both.png", "id": 2 },
+      { "src": "/Nike Air Max 90 Futura w/down.png", "id": 3 }
     ],
-    "description": "The combination of white shoes and a sweater is one of the most versatile options. This simple dress can be paired with almost any color and fabric, so you'll never have trouble getting dressed. You can also wear it any time of the year, so your imagination has no limits.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 3,
     "price": 145.99,
@@ -46,11 +46,11 @@
   },
   {
     "name": "Air Max Bella TR 5",
-    "source": "/Nike Air Max Bella TR 5 w/main.png",
     "cardPhoto": "/Nike Air Max Bella TR 5 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Max Bella TR 5 w/both.png", "id": 1 },
-      { "src": "/Nike Air Max Bella TR 5 w/down.png", "id": 2 }
+      {"src": "/Nike Air Max Bella TR 5 w/main.png", "id": 1},
+      { "src": "/Nike Air Max Bella TR 5 w/both.png", "id": 2 },
+      { "src": "/Nike Air Max Bella TR 5 w/down.png", "id": 3 }
     ],
     "description": "If you walk a lot during the day, then you should consider choosing this shoes that will easily fit your feet. Toes tend to swell as they become tired. Choose a wide shoe with thick soles.",
     "isFromMan": false,
@@ -60,25 +60,25 @@
   },
   {
     "name": "Air Winflo 9",
-    "source": "/Nike Air Winflo 9 w/main.png",
     "cardPhoto": "/Nike Air Winflo 9 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Winflo 9 w/both.png", "id": 1 },
-      { "src": "/Nike Air Winflo 9 w/down.png", "id": 2 }
+      {"src": "/Nike Air Winflo 9 w/main.png", "id": 1},
+      { "src": "/Nike Air Winflo 9 w/both.png", "id": 2 },
+      { "src": "/Nike Air Winflo 9 w/down.png", "id": 3 }
     ],
-    "description": "Thie shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
-    "id": 13,
+    "id": 22,
     "price": 135.99,
     "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Zoom Pegasus 39",
-    "source": "/Nike Air Zoom Pegasus 39 w/main.png",
     "cardPhoto": "/Nike Air Zoom Pegasus 39 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Zoom Pegasus 39 w/both.png", "id": 1 },
-      { "src": "/Nike Air Zoom Pegasus 39 w/down.png", "id": 2 }
+      {"src": "/Nike Air Zoom Pegasus 39 w/main.png", "id": 1},
+      { "src": "/Nike Air Zoom Pegasus 39 w/both.png", "id": 2 },
+      { "src": "/Nike Air Zoom Pegasus 39 w/down.png", "id": 3 }
     ],
     "description": "The best thing about this shoes is that they go well with any outfit and never let down their owner. You are not going to spend hours trying to find the perfect pair of shoes.",
     "isFromMan": false,
@@ -88,11 +88,11 @@
   },
   {
     "name": "Air Zoom Pegasus FlyEase",
-    "source": "/Nike Air Zoom Pegasus FlyEase w/main.png",
     "cardPhoto": "/Nike Air Zoom Pegasus FlyEase w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Zoom Pegasus FlyEase w/both.png", "id": 1 },
-      { "src": "/Nike Air Zoom Pegasus FlyEase w/down.png", "id": 2 }
+      {"src": "/Nike Air Zoom Pegasus FlyEase w/main.png", "id": 1},
+      { "src": "/Nike Air Zoom Pegasus FlyEase w/both.png", "id": 2 },
+      { "src": "/Nike Air Zoom Pegasus FlyEase w/down.png", "id": 3 }
     ],
     "description": "Shoes are considered to be the most important accessories for women. There are many styles of shoes available in the market today.",
     "isFromMan": false,
@@ -102,11 +102,11 @@
   },
   {
     "name": "Air Zoom Structure 24",
-    "source": "/Nike Air Zoom Structure 24 w/main.png",
     "cardPhoto": "/Nike Air Zoom Structure 24 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Zoom Structure 24 w/both.png", "id": 1 },
-      { "src": "/Nike Air Zoom Structure 24 w/down.png", "id": 2 }
+      {"src": "/Nike Air Zoom Structure 24 w/main.png", "id": 1},
+      { "src": "/Nike Air Zoom Structure 24 w/both.png", "id": 2 },
+      { "src": "/Nike Air Zoom Structure 24 w/down.png", "id": 3 }
     ],
     "description": "Shoes are considered to be the most important accessories for women. There are many styles of shoes available in the market today.",
     "isFromMan": false,
@@ -116,11 +116,11 @@
   },
   {
     "name": "Air Zoom SuperRep 3",
-    "source": "/Nike Air Zoom SuperRep 3 w/main.png",
     "cardPhoto": "/Nike Air Zoom SuperRep 3 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Zoom SuperRep 3 w/both.png", "id": 1 },
-      { "src": "/Nike Air Zoom SuperRep 3 w/down.png", "id": 2 }
+      {"src": "/Nike Air Zoom SuperRep 3 w/main.png", "id": 1},
+      { "src": "/Nike Air Zoom SuperRep 3 w/both.png", "id": 2 },
+      { "src": "/Nike Air Zoom SuperRep 3 w/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": false,
@@ -130,13 +130,13 @@
   },
   {
     "name": "Free Run 5.0",
-    "source": "/Nike Free Run 5.0 w/main.png",
     "cardPhoto": "/Nike Free Run 5.0 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Free Run 5.0 w/both.png", "id": 1 },
-      { "src": "/Nike Free Run 5.0 w/down.png", "id": 2 }
+      {"src": "/Nike Free Run 5.0 w/main.png", "id": 1},
+      { "src": "/Nike Free Run 5.0 w/both.png", "id": 2 },
+      { "src": "/Nike Free Run 5.0 w/down.png", "id": 3 }
     ],
-    "description": "The combination of white shoes and a sweater is one of the most versatile options. This simple dress can be paired with almost any color and fabric, so you'll never have trouble getting dressed. You can also wear it any time of the year, so your imagination has no limits.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 9,
     "price": 145.99,
@@ -144,13 +144,13 @@
   },
   {
     "name": "React Pegasus Trail 4 GORE-TEX",
-    "source": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png",
     "cardPhoto": "/Nike React Pegasus Trail 4 GORE-TEX w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.png", "id": 1 },
-      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.png", "id": 2 }
+      {"src": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png", "id": 1},
+      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.png", "id": 2 },
+      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.png", "id": 3 }
     ],
-    "description": "The combination of white shoes and a sweater is one of the most versatile options. This simple dress can be paired with almost any color and fabric, so you'll never have trouble getting dressed. You can also wear it any time of the year, so your imagination has no limits.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 10,
     "price": 145.99,
@@ -158,13 +158,13 @@
   },
   {
     "name": "React Pegasus Trail 4",
-    "source": "/Nike React Pegasus Trail 4 w/main.png",
     "cardPhoto": "/Nike React Pegasus Trail 4 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike React Pegasus Trail 4 w/both.png", "id": 1 },
-      { "src": "/Nike React Pegasus Trail 4 w/down.png", "id": 2 }
+      {"src": "/Nike React Pegasus Trail 4 w/main.png", "id": 1},
+      { "src": "/Nike React Pegasus Trail 4 w/both.png", "id": 2 },
+      { "src": "/Nike React Pegasus Trail 4 w/down.png", "id": 3 }
     ],
-    "description": "The combination of white shoes and a sweater is one of the most versatile options. This simple dress can be paired with almost any color and fabric, so you'll never have trouble getting dressed. You can also wear it any time of the year, so your imagination has no limits.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 11,
     "price": 145.99,
@@ -172,13 +172,13 @@
   },
   {
     "name": "Metcon 8",
-    "source": "/Nike Metcon 8 w/main.png",
     "cardPhoto": "/Nike Metcon 8 w/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Metcon 8 w/both.png", "id": 1 },
-      { "src": "/Nike Metcon 8 w/down.png", "id": 2 }
+      {"src": "/Nike Metcon 8 w/main.png", "id": 1},
+      { "src": "/Nike Metcon 8 w/both.png", "id": 2 },
+      { "src": "/Nike Metcon 8 w/down.png", "id": 3 }
     ],
-    "description": "The combination of white shoes and a sweater is one of the most versatile options. This simple dress can be paired with almost any color and fabric, so you'll never have trouble getting dressed. You can also wear it any time of the year, so your imagination has no limits.",
+    "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 12,
     "price": 145.99,
@@ -186,11 +186,11 @@
   },
   {
     "name": "Kyrie Low 5",
-    "source": "/Kyrie Low 5/main.png",
     "cardPhoto": "/Kyrie Low 5/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Kyrie Low 5/both.png", "id": 1 },
-      { "src": "/Kyrie Low 5/down.png", "id": 2 }
+      {"src": "/Kyrie Low 5/main.png", "id": 1},
+      { "src": "/Kyrie Low 5/both.png", "id": 2 },
+      { "src": "/Kyrie Low 5/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -200,11 +200,11 @@
   },
   {
     "name": "Air Max Terrascape Plus",
-    "source": "/Nike Air Max Terrascape Plus/main.png",
     "cardPhoto": "/Nike Air Max Terrascape Plus/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Max Terrascape Plus/both.png", "id": 1 },
-      { "src": "/Nike Air Max Terrascape Plus/down.png", "id": 2 }
+      {"src": "/Nike Air Max Terrascape Plus/main.png", "id": 1},
+      { "src": "/Nike Air Max Terrascape Plus/both.png", "id": 2 },
+      { "src": "/Nike Air Max Terrascape Plus/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -214,11 +214,11 @@
   },
   {
     "name": "Air Max Plus",
-    "source": "/Nike Air Max Plus/main.png",
     "cardPhoto": "/Nike Air Max Plus/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Air Max Plus/both.png", "id": 1 },
-      { "src": "/Nike Air Max Plus/down.png", "id": 2 }
+      {"src": "/Nike Air Max Plus/main.png", "id": 1},
+      { "src": "/Nike Air Max Plus/both.png", "id": 2 },
+      { "src": "/Nike Air Max Plus/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -228,11 +228,11 @@
   },
   {
     "name": "Lunar Force",
-    "source": "/Nike Lunar Force/main.png",
     "cardPhoto": "/Nike Lunar Force/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike Lunar Force/both.png", "id": 1 },
-      { "src": "/Nike Lunar Force/down.png", "id": 2 }
+      {"src": "/Nike Lunar Force/main.png", "id": 1},
+      { "src": "/Nike Lunar Force/both.png", "id": 2 },
+      { "src": "/Nike Lunar Force/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -242,11 +242,11 @@
   },
   {
     "name": "SFB 6 Leather",
-    "source": "/Nike SFB 6 Leather/main.png",
     "cardPhoto": "/Nike SFB 6 Leather/main-card.png",
     "secondaryPhotos": [
-      { "src": "/Nike SFB 6 Leather/both.png", "id": 1 },
-      { "src": "/Nike SFB 6 Leather/down.png", "id": 2 }
+      {"src": "/Nike SFB 6 Leather/main.png", "id": 1},
+      { "src": "/Nike SFB 6 Leather/both.png", "id": 2 },
+      { "src": "/Nike SFB 6 Leather/down.png", "id": 3 }
     ],
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
@@ -256,13 +256,13 @@
   },
   {
     "name": "Air Vapormax Plus",
-    "source": "/nike-air-vapormax-plus/main.png",
     "cardPhoto": "/nike-air-vapormax-plus/main-card.png",
     "secondaryPhotos": [
-      { "src": "/nike-air-vapormax-plus/both.png", "id": 1 },
-      { "src": "/nike-air-vapormax-plus/down.png", "id": 2 }
+      {"src": "/nike-air-vapormax-plus/main.png", "id": 1},
+      { "src": "/nike-air-vapormax-plus/both.png", "id": 2 },
+      { "src": "/nike-air-vapormax-plus/down.png", "id": 3 }
     ],
-    "description": "The modern shoes have become popular recently. In fact, they are not only fashionable, but also practical for people who want to look stylish while working out. These shoes are designed with high-quality materials, including leather, suede, and mesh.",
+    "description": "These shoes are designed with high-quality materials, including leather, suede, and mesh.",
     "isFromMan": true,
     "id": 21,
     "price": 127.99,
