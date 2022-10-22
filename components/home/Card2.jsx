@@ -39,19 +39,21 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="relative bg-background_main_l rounded-xl max-h-40 custom-shadow">
-        <button
-          onClick={handleAddToFav}
-          className="absolute z-10 rounded-md shadow-md left-2 top-2"
-        >
-          <HiOutlineHeart
-            className={`w-8 h-8 stroke-buttons_main ${
-              listFavsClean.length === 1 ? "fill-buttons_main" : ""
-            }`}
-          />
-        </button>
-
+    <div className="relative flex flex-col items-center justify-center">
+      <button
+        onClick={handleAddToFav}
+        className="absolute z-10 rounded-md shadow-md left-2 top-2"
+      >
+        <HiOutlineHeart
+          className={`w-8 h-8 stroke-buttons_main ${
+            listFavsClean.length === 1 ? "fill-buttons_main" : ""
+          }`}
+        />
+      </button>
+      <div
+        onClick={handleOpenProduct}
+        className="bg-background_main_l rounded-xl max-h-40 custom-shadow"
+      >
         <Image
           src={cardPhoto}
           width={200}

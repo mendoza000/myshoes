@@ -14,7 +14,7 @@ export default function Home() {
     const bottomNav = document.querySelector(".bottom-navbar");
     bottomNav.classList.remove("hidden");
     dispatch(getFavs());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
