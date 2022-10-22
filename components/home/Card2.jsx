@@ -3,13 +3,13 @@ import Image from "next/image";
 import { HiOutlineHeart } from "react-icons/hi";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
-import { addFav } from "@store/actions/fav";
+import { addFav, removeFav, saveFavs } from "@store/actions/fav";
 
 const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const favs = useSelector((state) => state.favs);
-  const listFavsClean = favs.filter((e) => e.id !== id);
+  const listFavsClean = favs.filter((e) => e.id === id);
 
   const handleOpenProduct = () => {
     router.push(`/product/${id}`);
@@ -18,26 +18,36 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   };
 
   const handleAddToFav = () => {
-    dispatch(
-      addFav({
-        id,
-        name,
-        price,
-        rating,
-      })
-    );
+    if (listFavsClean.length === 0) {
+      dispatch(
+        addFav({
+          id,
+          name,
+          price,
+          rating,
+        })
+      );
+    } else {
+      dispatch(
+        removeFav({
+          id,
+        })
+      );
+    }
+
+    dispatch(saveFavs());
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="bg-background_main_l rounded-xl max-h-40 custom-shadow relative">
+    <div className="flex flex-col items-center justify-center">
+      <div className="relative bg-background_main_l rounded-xl max-h-40 custom-shadow">
         <button
           onClick={handleAddToFav}
-          className="absolute left-2 top-2 z-10 rounded-md shadow-md"
+          className="absolute z-10 rounded-md shadow-md left-2 top-2"
         >
           <HiOutlineHeart
-            className={`h-8 w-8 duration-300 stroke-buttons_main ${
-              listFavsClean.length <= 0 ? "fill-buttons_main" : ""
+            className={`w-8 h-8 stroke-buttons_main ${
+              listFavsClean.length === 1 ? "fill-buttons_main" : ""
             }`}
           />
         </button>
@@ -49,7 +59,7 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
           alt={name}
           className={"-translate-y-12"}
         />
-        <div className="-translate-y-11 flex min-w-full justify-around items-center">
+        <div className="flex items-center justify-around min-w-full -translate-y-11">
           <span className="text-fonts_secondary">${price}</span>
           <span className="p-1 bg-buttons_main bg-opacity-30 rounded-xl">
             In stock

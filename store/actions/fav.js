@@ -13,3 +13,15 @@ export const removeFav = (item) => {
     payload: item,
   };
 };
+
+export const getFavs = () => {
+  return {
+    type: types.GET_FAVORITES,
+  };
+};
+
+export const saveFavs = () => {
+  return {
+    type: types.SAVE_FAVORITES,
+  };
+};

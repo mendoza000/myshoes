@@ -3,14 +3,17 @@ import "animate.css";
 import { useEffect } from "react";
 import Card2 from "@components/home/Card2";
 import useImages from "hooks/useImages";
+import { useDispatch } from "react-redux";
+import { getFavs } from "@store/actions/fav";
 
 export default function Home() {
+  const dispatch = useDispatch();
   const { imagesLoaded, imagesLoadError } = useImages({ data });
-  console.log(imagesLoaded);
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
     bottomNav.classList.remove("hidden");
+    dispatch(getFavs());
   }, []);
 
   return (
@@ -22,11 +25,11 @@ export default function Home() {
          " animate-splashBounce pointer-events-none translate-y-full "
        }`}
       >
-        <div class="waveform">
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
-          <div class="waveform__bar"></div>
+        <div className="waveform">
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
         </div>
       </div>
       <div className="container min-h-screen bg-background_main animate__animated animate__fadeIn animate__faster">

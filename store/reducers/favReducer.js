@@ -16,7 +16,18 @@ export const favReducer = (state = initialState, action) => {
       return [...state, action.payload];
 
     case types.REMOVE_FAVORITE:
-      return state.filter((fav) => fav.id !== action.payload);
+      return state.filter((fav) => fav.id !== action.payload.id);
+
+    case types.SAVE_FAVORITES:
+      localStorage.setItem("favs-MS", JSON.stringify(state));
+      return state;
+
+    case types.GET_FAVORITES:
+      const localFavs = JSON.parse(localStorage.getItem("favs-MS"));
+      if (localFavs) {
+        return localFavs;
+      }
+      return state;
 
     default:
       return state;
