@@ -2,6 +2,7 @@ import Card from "../components/home/Card";
 import data from "./api/data.json";
 import "animate.css";
 import { useEffect } from "react";
+import Card2 from "@components/home/Card2";
 
 export default function Home() {
   useEffect(() => {
@@ -33,14 +34,15 @@ export default function Home() {
         <div className="grid items-center justify-center grid-cols-2 gap-6 my-8 overflow-x-hidden p-5 h-full w-full">
           {data.map((shoe) => {
             return (
-              <Card
-                key={shoe.id}
-                image={shoe.cardPhoto}
-                id={shoe.id}
-                rating={shoe.rating}
-                price={shoe.price}
-                name={shoe.name}
-              />
+              // <Card
+              //   key={shoe.id}
+              //   image={shoe.cardPhoto}
+              //   id={shoe.id}
+              //   rating={shoe.rating}
+              //   price={shoe.price}
+              //   name={shoe.name}
+              // />
+              <Card2 key={shoe.id} {...shoe} />
             );
           })}
         </div>

@@ -9,11 +9,11 @@
 }
 
 .transform-to-children .children-custom-class {
-  transform: scale(1.21);
+  transform: scale(1);
 }
 .skewed-bg {
   position: absolute;
-  top: 45%;
+  top: 55%;
   bottom: 0;
   right: 0;
   left: 0;
@@ -29,5 +29,5 @@
   pointer-events: none;
 }
 .custom-shadow {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
 }
