@@ -1,9 +1,12 @@
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { HiOutlineStar, HiStar } from "react-icons/hi";
 
+
 const Card = ({ image, name, id, rating, price }) => {
   const router = useRouter();
+  // const {isInViewPort, fromRef} = useIntersectionObserver()
 
   const handleOpenProduct = () => {
     router.push(`/product/${id}`);
@@ -13,6 +16,7 @@ const Card = ({ image, name, id, rating, price }) => {
 
   return (
     <div
+      ref={fromRef} 
       onClick={handleOpenProduct}
       className="flex flex-col items-center justify-center pb-4 rounded-md transform-to-children bg-background_main_l custom-shadow relative cursor-pointer min-h-[13rem]"
     >
@@ -24,7 +28,7 @@ const Card = ({ image, name, id, rating, price }) => {
             width={220}
             height={220}
             alt={"air-force"}
-            className="pointer-events-none -rotate-12 -translate-x-4 z-30 "
+            className={`pointer-events-none -rotate-12 -translate-x-4 z-30 ${isInViewPort && 'scale-150'} `}
           />
         </div>
         <div className="relative w-full h-6">
