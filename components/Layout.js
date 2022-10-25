@@ -1,8 +1,18 @@
-import React from "react";
+import { cartGet } from "@store/actions/cart";
+import { getFavs } from "@store/actions/fav";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import BottomNavbar from "./BottomNavbar";
 import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getFavs());
+    dispatch(cartGet());
+  }, [dispatch]);
+
   return (
     <>
       <Navbar />

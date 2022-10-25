@@ -5,6 +5,8 @@ import Card2 from "@components/home/Card2";
 import useImages from "hooks/useImages";
 import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
+import PromoCard from "@components/ui/PromoCard";
+import Slider from "@components/ui/Slider";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
 
 export default function Home() {
@@ -15,8 +17,7 @@ export default function Home() {
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
     bottomNav.classList.remove("hidden");
-    dispatch(getFavs());
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
@@ -54,6 +55,8 @@ export default function Home() {
             </h3>
           </div>
 
+          <PromoCard />
+          <Slider />
           <div ref={fromRef} className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
             {data.map((shoe) => {
               return <Card2 key={shoe.id} {...shoe} />;

@@ -41,7 +41,7 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   };
 
   return (
-    <div ref={fromRef} className="relative flex flex-col items-center justify-center">
+    <div ref={fromRef} className="relative flex flex-col items-center justify-center min-w-[10rem]">
       <button
         onClick={handleAddToFav}
         className="absolute z-10 rounded-md shadow-md left-2 top-2"

@@ -1,15 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const Card = () => {
+const Card = ({ cardPhoto }) => {
   return (
-    <div className="bg-fonts_main max-h-40 flex justify-center items-center">
-      <Image
-        src={"/Woman4/Pasted-20221016-012544_preview_rev_1.png"}
-        width={200}
-        height={250}
-        alt="Woman4"
-      />
+    <div className="flex items-center justify-center bg-fonts_main max-h-40">
+      <Image src={cardPhoto} width={200} height={250} alt="Woman4" />
     </div>
   );
 };
