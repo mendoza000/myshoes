@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { BiSliderAlt } from "react-icons/bi"
 import data from 'pages/api/data.json'
-import Card2 from '@components/home/Card2'
+import LongCard  from '@components/ui/LongCard'
 
 
 export default function Search() {
@@ -62,33 +62,32 @@ export default function Search() {
   }
 
   useEffect(() => {
-    console.log(filters)
     getFilteredShoes()
   }, [filters]) //eslint-disable-line
 
-  return <section className='h-screen w-screen flex flex-col'>
-    <div className='w-full h-[17%] flex justify-center items-end shadow-md'>
-      <div className='relative mb-2 w-4/5 '>
-        <input onChange={handleChange} className='w-full p-2 h-max rounded-md bg-light_gray focus-visible:bg-dark_gray
-      focus-visible:outline-none focus-visible:text-background_main_l pr-12 transition-colors ' />
+  return <section className='h-screen w-screen flex flex-col overflow-x-hidden mb-12'>
+    <div className='w-full h-28 flex justify-center items-end shadow-md'>
+      <div className='relative mb-4 w-4/5 '>
+        <input onChange={handleChange} className='w-full p-2 h-max rounded-md border-solid border border-light_gray
+      focus-visible:outline-none transition-colors ' />
         <button onClick={handleFilterOpen} className='absolute right-0 top-0 bg-buttons_main h-full w-12 rounded-r-md flex justify-center z-10 items-center' >
           <BiSliderAlt className='h-3/4 w-3/4 text-black' />
         </button>
         {
           filtersOpen &&
-          <div className='absolute right-3 flex flex-col bg-background_main_l z-20 w-3/4'>
+          <div className='absolute right-3 flex flex-col bg-background_main_l z-20 w-3/4 px-4 rounded-2xl shadow-lg'>
             <fieldset className='flex justify-around mt-4'>
               <div>
                 <input type='radio' name='gender' id='all' defaultChecked={filters.isFromMan === null && true} onChange={() => { setFilters({ ...filters, isFromMan: null }) }} />
-                <label className='ml-1' for='all'>All</label>
+                <label className='ml-1' htmlFor='all'>All</label>
               </div>
               <div>
                 <input type='radio' name='gender' id='woman' defaultChecked={filters.isFromMan === false && true} onChange={() => { setFilters({ ...filters, isFromMan: false }) }} />
-                <label className='ml-1' for='woman'>Woman</label>
+                <label className='ml-1' htmlFor='woman'>Woman</label>
               </div>
               <div>
                 <input type='radio' name='gender' id='man' defaultChecked={filters.isFromMan === true && true} onChange={() => { setFilters({ ...filters, isFromMan: true }) }} />
-                <label className='ml-1' for='man'>Man</label>
+                <label className='ml-1' htmlFor='man'>Man</label>
               </div>
             </fieldset>
             <span className='block mt-4' >Choose a price</span>
@@ -101,10 +100,10 @@ export default function Search() {
         }
       </div>
     </div>
-    <div className='w-11/12 mx-auto h-[81%] '>
+    <div className='w-11/12 mx-auto h-[81%]'>
       {
         filteredShoes.map(shoe => {
-          return <Card2 key={shoe.id} {...shoe} />
+          return <LongCard key={shoe.id} {...shoe} />
         })
       }
     </div>

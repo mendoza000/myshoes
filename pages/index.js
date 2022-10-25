@@ -1,18 +1,17 @@
 import data from "./api/data.json";
 import "animate.css";
 import { useEffect } from "react";
-import Card2 from "@components/home/Card2";
 import useImages from "hooks/useImages";
 import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
+import LongCard from "@components/ui/LongCard";
 
 export default function Home() {
   const dispatch = useDispatch();
   const { imagesLoaded, imagesLoadError } = useImages({ data });
-  const {isInViewPort, fromRef} = useIntersectionObserver()
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
@@ -57,9 +56,9 @@ export default function Home() {
 
           <PromoCard />
           <Slider />
-          <div ref={fromRef} className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
+          <div className="flex flex-col justify-center w-full h-full p-2 mb-10 overflow-hidden">
             {data.map((shoe) => {
-              return <Card2 key={shoe.id} {...shoe} />;
+              return <LongCard key={shoe.id} {...shoe} />;
             })}
           </div>
         </div>
