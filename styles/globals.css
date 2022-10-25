@@ -6,27 +6,16 @@
   html {
     font-family: "Rubik", system-ui, sans-serif;
   }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
-.transform-to-children .children-custom-class {
-  transform: scale(1);
-}
-.skewed-bg {
-  position: absolute;
-  top: 55%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: skewY(12deg);
-  transform-origin: top right;
-}
-.transform-to-children:hover .children-custom-class {
-  transform: scale(1.31) translateY(-5%);
-}
-.children-custom-class span {
+.children-overflow span {
   pointer-events: none;
+  overflow: visible!important;
 }
 .custom-shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;

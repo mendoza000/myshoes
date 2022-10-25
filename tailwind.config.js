@@ -14,7 +14,8 @@ module.exports = {
       fonts_secondary: "#256D85",
       details: "#A85CF9",
       black: '#000',
-      gray: '#edf2f4'
+      light_gray: 'rgb(202, 202, 202)',
+      dark_gray: "rgb(61, 61, 61)"
     },
     extend: {
       fontFamily: {

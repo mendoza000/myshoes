@@ -7,10 +7,12 @@ import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 
 export default function Home() {
   const dispatch = useDispatch();
   const { imagesLoaded, imagesLoadError } = useImages({ data });
+  const {isInViewPort, fromRef} = useIntersectionObserver()
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
@@ -55,8 +57,7 @@ export default function Home() {
 
           <PromoCard />
           <Slider />
-
-          <div className="grid items-center justify-center w-full h-full grid-cols-2 p-5 mt-3 mb-8 overflow-x-hidden gap-x-6 gap-y-3">
+          <div ref={fromRef} className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
             {data.map((shoe) => {
               return <Card2 key={shoe.id} {...shoe} />;
             })}
