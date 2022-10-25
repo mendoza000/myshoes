@@ -18,7 +18,7 @@ export default function useIntersectionObserver () {
       }
     }
     const observer = new IntersectionObserver(onChange, {
-      rootMargin: '-25%'
+      rootMargin: '-25% 0px -23% 0px'
     })
 
     if (element) observer.observe(element)

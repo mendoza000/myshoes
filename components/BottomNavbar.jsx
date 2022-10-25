@@ -24,7 +24,7 @@ const BottomNavbar = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <Link href={"/search"}>
                 <a>
                   <HiSearch
                     className={`h-6 w-6 duration-300 ${route === "/search" ? "fill-buttons_main" : "fill-fonts_main"
