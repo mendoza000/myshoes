@@ -3,288 +3,572 @@
     "name": "Air Jordan 9 Retro",
     "cardPhoto": "/Air Jordan 9 Retro/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Air Jordan 9 Retro/main.png", "id": 1},
-      { "src": "/Air Jordan 9 Retro/both.png", "id": 2 },
-      { "src": "/Air Jordan 9 Retro/down.png", "id": 3 }
+      {
+        "src": "/Air Jordan 9 Retro/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Air Jordan 9 Retro/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Air Jordan 9 Retro/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 1,
     "price": 127.99,
-    "rating": [true, true, true, true, false],
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
     "IntRating": 4
   },
   {
     "name": "Jordan ADG 4",
     "cardPhoto": "/Jordan ADG 4/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Jordan ADG 4/main.png", "id": 1},
-      { "src": "/Jordan ADG 4/both.png", "id": 2 },
-      { "src": "/Jordan ADG 4/down.png", "id": 3 }
+      {
+        "src": "/Jordan ADG 4/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Jordan ADG 4/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Jordan ADG 4/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "If you want to create a casual look, you can match it with this shoes. Putting on these means that you are still young and full of energy. The combo looks pretty good and is easy to create without much effort.",
     "isFromMan": true,
     "id": 2,
-
     "price": 182.55,
-    "rating": [true, true, true, true, true],
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
     "IntRating": 4
   },
   {
     "name": "Air Max 90 Futura",
     "cardPhoto": "/Nike Air Max 90 Futura w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Max 90 Futura w/main.png", "id": 1},
-      { "src": "/Nike Air Max 90 Futura w/both.png", "id": 2 },
-      { "src": "/Nike Air Max 90 Futura w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Max 90 Futura w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Max 90 Futura w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Max 90 Futura w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 3,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Max Bella TR 5",
     "cardPhoto": "/Nike Air Max Bella TR 5 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Max Bella TR 5 w/main.png", "id": 1},
-      { "src": "/Nike Air Max Bella TR 5 w/both.png", "id": 2 },
-      { "src": "/Nike Air Max Bella TR 5 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Max Bella TR 5 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Max Bella TR 5 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Max Bella TR 5 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "If you walk a lot during the day, then you should consider choosing this shoes that will easily fit your feet. Toes tend to swell as they become tired. Choose a wide shoe with thick soles.",
     "isFromMan": false,
     "id": 4,
     "price": 147.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Winflo 9",
     "cardPhoto": "/Nike Air Winflo 9 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Winflo 9 w/main.png", "id": 1},
-      { "src": "/Nike Air Winflo 9 w/both.png", "id": 2 },
-      { "src": "/Nike Air Winflo 9 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Winflo 9 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Winflo 9 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Winflo 9 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 22,
     "price": 135.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Zoom Pegasus 39",
     "cardPhoto": "/Nike Air Zoom Pegasus 39 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Zoom Pegasus 39 w/main.png", "id": 1},
-      { "src": "/Nike Air Zoom Pegasus 39 w/both.png", "id": 2 },
-      { "src": "/Nike Air Zoom Pegasus 39 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Zoom Pegasus 39 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Zoom Pegasus 39 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Zoom Pegasus 39 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "The best thing about this shoes is that they go well with any outfit and never let down their owner. You are not going to spend hours trying to find the perfect pair of shoes.",
     "isFromMan": false,
     "id": 5,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Zoom Pegasus FlyEase",
     "cardPhoto": "/Nike Air Zoom Pegasus FlyEase w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Zoom Pegasus FlyEase w/main.png", "id": 1},
-      { "src": "/Nike Air Zoom Pegasus FlyEase w/both.png", "id": 2 },
-      { "src": "/Nike Air Zoom Pegasus FlyEase w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Zoom Pegasus FlyEase w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Zoom Pegasus FlyEase w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Zoom Pegasus FlyEase w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "Shoes are considered to be the most important accessories for women. There are many styles of shoes available in the market today.",
     "isFromMan": false,
     "id": 6,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Zoom Structure 24",
     "cardPhoto": "/Nike Air Zoom Structure 24 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Zoom Structure 24 w/main.png", "id": 1},
-      { "src": "/Nike Air Zoom Structure 24 w/both.png", "id": 2 },
-      { "src": "/Nike Air Zoom Structure 24 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Zoom Structure 24 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Zoom Structure 24 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Zoom Structure 24 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "Shoes are considered to be the most important accessories for women. There are many styles of shoes available in the market today.",
     "isFromMan": false,
     "id": 7,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Air Zoom SuperRep 3",
     "cardPhoto": "/Nike Air Zoom SuperRep 3 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Zoom SuperRep 3 w/main.png", "id": 1},
-      { "src": "/Nike Air Zoom SuperRep 3 w/both.png", "id": 2 },
-      { "src": "/Nike Air Zoom SuperRep 3 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Zoom SuperRep 3 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Zoom SuperRep 3 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Zoom SuperRep 3 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": false,
     "id": 8,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Free Run 5.0",
     "cardPhoto": "/Nike Free Run 5.0 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Free Run 5.0 w/main.png", "id": 1},
-      { "src": "/Nike Free Run 5.0 w/both.png", "id": 2 },
-      { "src": "/Nike Free Run 5.0 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Free Run 5.0 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Free Run 5.0 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Free Run 5.0 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 9,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "React Pegasus Trail 4 GORE-TEX",
     "cardPhoto": "/Nike React Pegasus Trail 4 GORE-TEX w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png", "id": 1},
-      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.png", "id": 2 },
-      { "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.png", "id": 3 }
+      {
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 10,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "React Pegasus Trail 4",
     "cardPhoto": "/Nike React Pegasus Trail 4 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike React Pegasus Trail 4 w/main.png", "id": 1},
-      { "src": "/Nike React Pegasus Trail 4 w/both.png", "id": 2 },
-      { "src": "/Nike React Pegasus Trail 4 w/down.png", "id": 3 }
+      {
+        "src": "/Nike React Pegasus Trail 4 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike React Pegasus Trail 4 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike React Pegasus Trail 4 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 11,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Metcon 8",
     "cardPhoto": "/Nike Metcon 8 w/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Metcon 8 w/main.png", "id": 1},
-      { "src": "/Nike Metcon 8 w/both.png", "id": 2 },
-      { "src": "/Nike Metcon 8 w/down.png", "id": 3 }
+      {
+        "src": "/Nike Metcon 8 w/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Metcon 8 w/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Metcon 8 w/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "This shoes have been designed to keep your feet stable, comfortable, and prevent damage.",
     "isFromMan": false,
     "id": 12,
     "price": 145.99,
-    "rating": [true, true, true, false, false]
+    "rating": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
   },
   {
     "name": "Kyrie Low 5",
     "cardPhoto": "/Kyrie Low 5/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Kyrie Low 5/main.png", "id": 1},
-      { "src": "/Kyrie Low 5/both.png", "id": 2 },
-      { "src": "/Kyrie Low 5/down.png", "id": 3 }
+      {
+        "src": "/Kyrie Low 5/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Kyrie Low 5/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Kyrie Low 5/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 13,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   },
   {
     "name": "Air Max Terrascape Plus",
     "cardPhoto": "/Nike Air Max Terrascape Plus/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Max Terrascape Plus/main.png", "id": 1},
-      { "src": "/Nike Air Max Terrascape Plus/both.png", "id": 2 },
-      { "src": "/Nike Air Max Terrascape Plus/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Max Terrascape Plus/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Max Terrascape Plus/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Max Terrascape Plus/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 14,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   },
   {
     "name": "Air Max Plus",
     "cardPhoto": "/Nike Air Max Plus/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Air Max Plus/main.png", "id": 1},
-      { "src": "/Nike Air Max Plus/both.png", "id": 2 },
-      { "src": "/Nike Air Max Plus/down.png", "id": 3 }
+      {
+        "src": "/Nike Air Max Plus/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Air Max Plus/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Air Max Plus/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 15,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   },
   {
     "name": "Lunar Force",
     "cardPhoto": "/Nike Lunar Force/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike Lunar Force/main.png", "id": 1},
-      { "src": "/Nike Lunar Force/both.png", "id": 2 },
-      { "src": "/Nike Lunar Force/down.png", "id": 3 }
+      {
+        "src": "/Nike Lunar Force/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike Lunar Force/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike Lunar Force/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 16,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   },
   {
     "name": "SFB 6 Leather",
     "cardPhoto": "/Nike SFB 6 Leather/main-card.png",
     "secondaryPhotos": [
-      {"src": "/Nike SFB 6 Leather/main.png", "id": 1},
-      { "src": "/Nike SFB 6 Leather/both.png", "id": 2 },
-      { "src": "/Nike SFB 6 Leather/down.png", "id": 3 }
+      {
+        "src": "/Nike SFB 6 Leather/main.png",
+        "id": 1
+      },
+      {
+        "src": "/Nike SFB 6 Leather/both.png",
+        "id": 2
+      },
+      {
+        "src": "/Nike SFB 6 Leather/down.png",
+        "id": 3
+      }
     ],
     "isBlack": true,
     "description": "This shoes are bright, look good, and stand out in a world where black or brown shoes are considered more sensible but not very exciting choices for most people.",
     "isFromMan": true,
     "id": 17,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   },
   {
     "name": "Air Vapormax Plus",
     "cardPhoto": "/nike-air-vapormax-plus/main-card.png",
     "secondaryPhotos": [
-      {"src": "/nike-air-vapormax-plus/main.png", "id": 1},
-      { "src": "/nike-air-vapormax-plus/both.png", "id": 2 },
-      { "src": "/nike-air-vapormax-plus/down.png", "id": 3 }
+      {
+        "src": "/nike-air-vapormax-plus/main.png",
+        "id": 1
+      },
+      {
+        "src": "/nike-air-vapormax-plus/both.png",
+        "id": 2
+      },
+      {
+        "src": "/nike-air-vapormax-plus/down.png",
+        "id": 3
+      }
     ],
     "isBlack": false,
     "description": "These shoes are designed with high-quality materials, including leather, suede, and mesh.",
     "isFromMan": true,
     "id": 21,
     "price": 127.99,
-    "rating": [true, true, true, true, false]
+    "rating": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
   }
 ]
