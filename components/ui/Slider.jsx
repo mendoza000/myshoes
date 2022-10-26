@@ -1,34 +1,19 @@
 import Card2 from "@components/home/Card2";
-import React from "react";
-import PromoCard from "./PromoCard";
+import data from 'pages/api/data.json'
+import React, { useEffect, useState } from "react";
 
 const Slider = () => {
+  // const [index, setIndex] = useState(0)
+  // const [shoes, setShoes] = useState(0)
+  // useEffect(() => {
+  //   const actualShoe = data.sliderShoes.at(index)
+  //   const prevShoe = data.sliderShoes.at(index-1)
+  //   const nextShoe = data.sliderShoes.at(index+1)
+  //   setShoes({prevShoe, actualShoe, nextShoe})
+  // }, [index])
+
   return (
     <div className="flex gap-3 px-5 overflow-x-scroll mt-7">
-      <Card2
-        name={"Jordan ADG 4"}
-        cardPhoto={"/Jordan ADG 4/main-card.png"}
-        id={2}
-        price={159.55}
-      />
-      <Card2
-        name={"Jordan ADG 4"}
-        cardPhoto={"/Jordan ADG 4/main-card.png"}
-        id={2}
-        price={159.55}
-      />
-      <Card2
-        name={"Jordan ADG 4"}
-        cardPhoto={"/Jordan ADG 4/main-card.png"}
-        id={2}
-        price={159.55}
-      />
-      <Card2
-        name={"Jordan ADG 4"}
-        cardPhoto={"/Jordan ADG 4/main-card.png"}
-        id={2}
-        price={159.55}
-      />
     </div>
   );
 };

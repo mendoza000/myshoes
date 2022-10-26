@@ -6,8 +6,7 @@ import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
-import useIntersectionObserver from "hooks/useIntersectionObserver";
-import LongCard from "@components/ui/LongCard";
+import Card2 from "@components/home/Card2";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -22,10 +21,9 @@ export default function Home() {
     <>
       <div
         className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
-       bg-background_main_l ${
-         imagesLoaded &&
-         " animate-splashBounce pointer-events-none translate-y-full "
-       }`}
+       bg-background_main_l ${imagesLoaded &&
+          " animate-splashBounce pointer-events-none translate-y-full "
+          }`}
       >
         <div className="waveform">
           <div className="waveform__bar"></div>
@@ -56,9 +54,9 @@ export default function Home() {
 
           <PromoCard />
           <Slider />
-          <div className="flex flex-col justify-center w-full h-full p-2 mb-10 overflow-hidden">
+          <div className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
             {data.map((shoe) => {
-              return <LongCard key={shoe.id} {...shoe} />;
+              return <Card2 key={shoe.id} {...shoe} />;
             })}
           </div>
         </div>
