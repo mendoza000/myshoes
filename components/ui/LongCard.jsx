@@ -32,19 +32,12 @@ const LongCard = ({ name, cardPhoto, id, price, isBlack }) => {
         className={`scale-125 transition-transform duration-1000 ${isInViewPort ? '-rotate-[30deg] -translate-x-5' : '-rotate-[15deg]'} -translate-y-20`}
         onLoad={() => { setIsImageLoaded(true) }}
       />
-      {
-        !isImageLoaded &&
-        <div className="absolute top-0 right-0 w-1/2 h-full">
-          <Image
-            src='/shoe-skeleton.svg'
-            alt="shoe"
-            width={230}
-            height={230}
-            className={`scale-125 invert -scale-x-100 transition-transform duration-1000
-            ${isInViewPort ? '-rotate-[30deg] -translate-x-0' : '-rotate-[15deg]'} -translate-y-10`}
-          />
+      <div className={`waveform absolute right-12 top-10 ${isImageLoaded && 'opacity-0'}`}>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
+          <div className="waveform__bar"></div>
         </div>
-      }
     </div>
   );
 };

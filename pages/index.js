@@ -7,7 +7,6 @@ import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
-import LongCard from "@components/ui/LongCard";
 import Card2 from "@components/home/Card2";
 
 export default function Home() {
@@ -23,10 +22,9 @@ export default function Home() {
     <>
       <div
         className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
-       bg-background_main_l ${
-         imagesLoaded &&
-         " animate-splashBounce pointer-events-none translate-y-full "
-       }`}
+       bg-background_main_l ${imagesLoaded &&
+          " animate-splashBounce pointer-events-none translate-y-full "
+          }`}
       >
         <div className="waveform">
           <div className="waveform__bar"></div>

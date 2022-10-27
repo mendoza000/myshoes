@@ -96,11 +96,10 @@ export default function Product() {
           className="absolute top-0 right-3"
         >
           <HiOutlineHeart
-            className={`w-8 h-8 duration-300 ${
-              listFavsClean.length === 1
+            className={`w-8 h-8 duration-300 ${listFavsClean.length === 1
                 ? "fill-buttons_main stroke-buttons_main"
                 : ""
-            }`}
+              }`}
           />
         </button>
       </section>
@@ -129,11 +128,10 @@ export default function Product() {
               return (
                 <div
                   key={size}
-                  className={`w-full h-7 duration-300 ${
-                    selectedSize === size
+                  className={`w-full h-7 duration-300 ${selectedSize === size
                       ? "bg-gray"
                       : "bg-black bg-opacity-50 text-background_main_l"
-                  } rounded-md grid place-content-center`}
+                    } rounded-md grid place-content-center`}
                   onClick={() => {
                     setSelectedSize(size);
                   }}

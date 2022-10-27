@@ -73,3 +73,12 @@
     transform: scaleY(1);
   }
 }
+
+.select-label:checked + label {
+  background-color: #47B5FF;
+  color: white;
+  box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
+  -webkit-box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
+  -moz-box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
+  transform:translateY(-2px);
+}
