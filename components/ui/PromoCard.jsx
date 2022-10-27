@@ -7,7 +7,7 @@ const PromoCard = ({ id, name, img }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 p-4 mx-5 mt-8 shadow-xl rounded-xl bg-gradient-to-r from-buttons_main to-[#36D1DC] max-h-32 fix-rotate min-w-[20rem]">
+    <div className="grid grid-cols-2 p-4 mx-5 mt-8 shadow-xl rounded-xl bg-gradient-to-r from-buttons_main to-[#36D1DC] max-h-32 fix-rotate min-w-[20rem] justify-center">
       <div className="flex flex-col gap-1">
         <span className="text-fonts_main">Promotion!</span>
         <p className="text-xl">Jordan ADG 4</p>

@@ -8,6 +8,7 @@ import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
 import LongCard from "@components/ui/LongCard";
+import Card2 from "@components/home/Card2";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -56,9 +57,9 @@ export default function Home() {
 
           <PromoCard />
           <Slider />
-          <div className="flex flex-col justify-center w-full h-full p-2 mb-10 overflow-hidden">
+          <div className="grid justify-center w-full h-full grid-cols-2 px-5 py-2 mb-10 overflow-hidden gap-x-6">
             {data.map((shoe) => {
-              return <LongCard key={shoe.id} {...shoe} />;
+              return <Card2 key={shoe.id} {...shoe} />;
             })}
           </div>
         </div>
