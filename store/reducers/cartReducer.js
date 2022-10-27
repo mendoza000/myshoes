@@ -27,7 +27,8 @@ export const cartReducer = (state = initialState, action) => {
 
     case types.CART_GET:
       let z = JSON.parse(localStorage.getItem("cart"));
-      return z;
+      if (z === null) return state;
+      else return z;
 
     case types.CART_SAVE:
       localStorage.setItem("cart", JSON.stringify(state));
