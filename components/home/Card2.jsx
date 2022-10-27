@@ -10,7 +10,7 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const favs = useSelector((state) => state.favs);
-  const {isInViewPort, fromRef} = useIntersectionObserver()
+  const { isInViewPort, fromRef } = useIntersectionObserver();
   const listFavsClean = favs.filter((e) => e.id === id);
 
   const handleOpenProduct = () => {
@@ -27,6 +27,7 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
           name,
           price,
           rating,
+          cardPhoto,
         })
       );
     } else {
@@ -41,7 +42,10 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
   };
 
   return (
-    <div ref={fromRef} className="relative flex flex-col items-center justify-center min-w-[10rem]">
+    <div
+      ref={fromRef}
+      className="relative flex flex-col items-center justify-center min-w-[10rem]"
+    >
       <button
         onClick={handleAddToFav}
         className="absolute z-10 rounded-md shadow-md left-2 top-2"
@@ -61,7 +65,9 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
           width={200}
           height={200}
           alt={name}
-          className={`-translate-y-12 transition-transform duration-700 ${isInViewPort && '-rotate-6 scale-110 -translate-y-14'}`}
+          className={`-translate-y-12 transition-transform duration-700 ${
+            isInViewPort && "-rotate-6 scale-110 -translate-y-14"
+          }`}
         />
         <div className="flex items-center justify-around min-w-full -translate-y-11">
           <span className="text-fonts_secondary">${price}</span>

@@ -9,11 +9,11 @@ export default function Search() {
   const [filteredShoes, setFilteredShoes] = useState([])
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [filters, setFilters] = useState({
-    keyword: '',
+    keyword: "",
     isFromMan: null,
     minPrice: null,
     maxPrice: null,
-  })
+  });
 
   const getFilteredShoes = () => {
     const filtered = data
@@ -40,31 +40,31 @@ export default function Search() {
     setFilters({ ...filters, keyword: e.target.value })
   }
   const handleFilterOpen = () => {
-    setFiltersOpen(filtersOpen ? false : true)
-  }
-  const handleMinPriceChange = e => {
-    if (e.target.value === '') {
-      setFilters({...filters, minPrice: null})
-      return
+    setFiltersOpen(filtersOpen ? false : true);
+  };
+  const handleMinPriceChange = (e) => {
+    if (e.target.value === "") {
+      setFilters({ ...filters, minPrice: null });
+      return;
     }
-    const value = parseInt(e.target.value)
-    if (filters.maxPrice !== null && value > filters.maxPrice) return
-    setFilters({ ...filters, minPrice: value })
-  }
-  const handleMaxPriceChange = e => {
-    if (e.target.value === '') {
-      setFilters({...filters, maxPrice: null})
-      return
+    const value = parseInt(e.target.value);
+    if (filters.maxPrice !== null && value > filters.maxPrice) return;
+    setFilters({ ...filters, minPrice: value });
+  };
+  const handleMaxPriceChange = (e) => {
+    if (e.target.value === "") {
+      setFilters({ ...filters, maxPrice: null });
+      return;
     }
-    const value = parseInt(e.target.value)
-    if (filters.minPrice !== null && value < filters.minPrice) return
-    setFilters({ ...filters, maxPrice: value })
-  }
+    const value = parseInt(e.target.value);
+    if (filters.minPrice !== null && value < filters.minPrice) return;
+    setFilters({ ...filters, maxPrice: value });
+  };
 
   useEffect(() => {
-    getFilteredShoes()
-  }, [filters]) //eslint-disable-line
-
+    getFilteredShoes();
+  }, [filters]); //eslint-disable-line
+  
   return <section className='h-screen w-screen flex flex-col overflow-x-hidden mb-12'>
     <div className='w-full h-28 flex justify-center items-end shadow-md'>
       <div className='relative mb-4 w-4/5 '>
@@ -100,17 +100,14 @@ export default function Search() {
               <input type='number' placeholder='Min' className='w-[45%] bg-buttons_main rounded-md pl-3 py-1 text-black placeholder:text-background_main_l focus-visible:outline-fonts_main' onChange={handleMinPriceChange} />
               <input type='number' placeholder='Max' className='w-[45%] bg-buttons_main rounded-md pl-3 py-1 text-black placeholder:text-background_main_l focus-visible:outline-fonts_main' onChange={handleMaxPriceChange} />
             </div>
-
-          </div>
-        }
+          )}
+        </div>
       </div>
-    </div>
-    <div className='w-11/12 mx-auto h-[81%]'>
-      {
-        filteredShoes.map(shoe => {
-          return <LongCard key={shoe.id} {...shoe} />
-        })
-      }
-    </div>
-  </section>
+      <div className="w-11/12 mx-auto h-[81%]">
+        {filteredShoes.map((shoe) => {
+          return <LongCard key={shoe.id} {...shoe} />;
+        })}
+      </div>
+    </section>
+  );
 }

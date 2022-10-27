@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
 import Card2 from "@components/home/Card2";
 
 export default function Home() {
@@ -54,7 +55,7 @@ export default function Home() {
 
           <PromoCard />
           <Slider />
-          <div className="grid items-center justify-center w-full h-full grid-cols-2 p-5 my-8 overflow-x-hidden gap-x-6 gap-y-3">
+          <div className="grid justify-center w-full h-full grid-cols-2 px-5 py-2 mb-10 overflow-hidden gap-x-6">
             {data.map((shoe) => {
               return <Card2 key={shoe.id} {...shoe} />;
             })}
