@@ -22,7 +22,6 @@ export default function Product() {
   const router = useRouter();
   const id = router.query.id;
   const listFavsClean = favs.filter((e) => e.id == id);
-  console.log(listFavsClean);
 
   const sizes = [37, 38, 39, 40, 41, 42, 43, 44, 45];
 
@@ -84,82 +83,119 @@ export default function Product() {
   if (product === null || product === undefined) return null;
 
   return (
-    <div className="flex flex-col w-screen h-screen bg-background_main_l animate__animated animate__fadeInUp animate__faster">
-      <Toaster />
-
-      <section className="relative w-full mt-4 mb-4 ">
-        <h2 className="mt-1 text-xl font-bold text-center font-Rubik">
-          {product.name}
-        </h2>
-        <button
-          onClick={handleAddToFavorites}
-          className="absolute top-0 right-3"
-        >
-          <HiOutlineHeart
-            className={`w-8 h-8 duration-300 ${listFavsClean.length === 1
+    <div className="w-screen h-screen overflow-hidden flex justify-center bg-background_main_l">
+      <div className="flex flex-col w-full h-full md:w-11/12 animate__animated animate__fadeInUp animate__faster
+    md:flex-row max-w-[1000px] lg:gap-x-20">
+        <Toaster />
+        {/* 
+      -------------------------------------------------------------------------------------------------------------
+      PARTE DE ARRIBA EN MOBILE (VOLVER PARA ATRAS, ETC) 
+      -------------------------------------------------------------------------------------------------------------
+      */}
+        <section className="relative w-full mt-4 mb-4 md:absolute md:top-0 md:left-0">
+          <h2 className="mt-1 text-xl font-bold text-center font-Rubik md:hidden">
+            {product.name}
+          </h2>
+          <button
+            onClick={handleAddToFavorites}
+            className="absolute top-0 right-3"
+          >
+            <HiOutlineHeart
+              className={`w-8 h-8 duration-300 ${listFavsClean.length === 1
                 ? "fill-buttons_main stroke-buttons_main"
                 : ""
-              }`}
-          />
-        </button>
-      </section>
-      <section className="w-full h-[60vh] mb-4 flex items-center overflow-hidden ">
-        <div
-          className='ml-auto mr-auto rounded-md bg-background_main_l w-11/12 h-full overflow-hidden relative after:bg-[url("/nike-logo.svg")] after:h-full
+                }`}
+            />
+          </button>
+        </section>
+        <section className="w-full h-[60vh] mb-4 flex flex-col items-center md:min-h-full md:max-w-[50%] relative justify-center ">
+          {/* 
+        ---------------------------------------------------------------------------------------------------------
+                                          PARTE DE LAS IMÁGENES
+        ---------------------------------------------------------------------------------------------------------
+        */}
+          <div
+            className='ml-auto mr-auto rounded-md bg-background_main_l w-11/12 h-full md:h-[55%] overflow-hidden relative after:bg-[url("/nike-logo.svg")] after:h-full
       after:w-full after:max-w-[330px] after:content-[""] after:absolute after:bg-no-repeat after:bg-gray after:top-1/2 after:left-1/2 after:-translate-x-1/2
-      after:-translate-y-[50%] after:z-0 after:bg-center after:bg-cover after:contrast-100 after:opacity-60'
-        >
-          {/* After es la imágen de nike */}
-          <div className="relative z-20 w-full mb-auto overflow-hidden h-5/6">
-            {image && (
-              <Image
-                alt="main shoe photo"
-                layout="fill"
-                // Layout fill para que la imágen se amolde al height y width del parent, tiene que estar acompañado de objectFit='contain'
-                objectFit="contain"
-                src={image ? image.src : ""}
-                className={`${image?.id === 1 ? "-rotate-45" : ""} z-20 `}
-              />
-            )}
-          </div>
-          <div className="flex flex-col h-[95%] tall:h-3/4 justify-between w-7 absolute text-xs top-0 left-2 z-[21]">
-            <span className="mt-2 text-sm">Size</span>
-            {sizes.map((size) => {
-              return (
-                <div
-                  key={size}
-                  className={`w-full h-7 duration-300 ${selectedSize === size
+      after:-translate-y-[50%] after:z-0 after:bg-center after:bg-cover after:contrast-100 after:opacity-60 md:mb-10'
+          >
+            {/* After es la imágen de nike */}
+            <div className="relative z-20 w-full mb-auto overflow-hidden h-5/6">
+              {image && (
+                <Image
+                  alt="main shoe photo"
+                  layout="fill"
+                  // Layout fill para que la imágen se amolde al height y width del parent, tiene que estar acompañado de objectFit='contain'
+                  objectFit="contain"
+                  src={image ? image.src : ""}
+                  className={`${image?.id === 1 ? "-rotate-45" : ""} z-20 `}
+                />
+              )}
+            </div>
+            <div className="flex flex-col h-[95%] tall:h-3/4 justify-between w-7 absolute text-xs top-0 left-2 z-[21] md:hidden">
+              <span className="mt-2 text-sm">Size</span>
+              {sizes.map((size) => {
+                return (
+                  <div
+                    key={size}
+                    className={`w-full h-7 duration-300 ${selectedSize === size
                       ? "bg-gray"
                       : "bg-black bg-opacity-50 text-background_main_l"
-                    } rounded-md grid place-content-center`}
-                  onClick={() => {
-                    setSelectedSize(size);
-                  }}
-                >
-                  {size}
-                </div>
-              );
-            })}
+                      } rounded-md grid place-content-center`}
+                    onClick={() => {
+                      setSelectedSize(size);
+                    }}
+                  >
+                    {size}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="absolute bottom-3 left-0 w-full flex justify-end h-[70px] z-20">
+              {product.secondaryPhotos.map((photo) => {
+                return (
+                  <div
+                    key={photo.id}
+                    className="w-[70px] h-[70px] inline-block relative ml-1 cursor-pointer md:hidden"
+                    onClick={() => {
+                      setImage(photo);
+                    }}
+                  >
+
+                    <div className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
+                    ${image?.id !== photo.id ? 'opacity-100' : 'opacity-0 '} z-10 rounded-lg`}>
+                    </div>
+
+                    <Image
+                      alt="Shoe Photo"
+                      width={70}
+                      height={70}
+                      objectFit="contain"
+                      src={photo.src}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="absolute bottom-3 left-0 w-full flex justify-end h-[70px] z-20">
+          <div className="hidden w-full md:flex justify-center items-center absolute bottom-20">
             {product.secondaryPhotos.map((photo) => {
               return (
                 <div
                   key={photo.id}
-                  className="w-[70px] h-[70px] inline-block relative ml-1 cursor-pointer"
+                  className="relative ml-1 cursor-pointer flex"
                   onClick={() => {
                     setImage(photo);
                   }}
                 >
-                  {image?.id !== photo.id && (
-                    <div className="absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] z-10 rounded-lg">
-                      <AiOutlineEye className="w-3/6 h-full m-auto mt-auto text-gray opacity-30" />
-                    </div>
-                  )}
+
+                  <div className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
+                    ${image?.id !== photo.id ? 'opacity-100' : 'opacity-0 '} z-10 rounded-lg`}>
+                  </div>
                   <Image
                     alt="Shoe Photo"
-                    width={70}
-                    height={70}
+                    width={90}
+                    height={90}
                     objectFit="contain"
                     src={photo.src}
                   />
@@ -167,101 +203,140 @@ export default function Product() {
               );
             })}
           </div>
-        </div>
-      </section>
-      <section className="flex flex-col w-full">
-        <div className="flex justify-between w-full mb-3">
-          <div>
-            <h3 className="inline ml-4 text-3xl font-bold text-fonts_main">
-              ${product.price.toString().split(".")[0]}
-            </h3>
-            <span className="inline text-lg text-fonts_main">
-              .{product.price.toString().split(".")[1]}
-            </span>
-          </div>
-          <div className="flex items-center mr-4">
-            {product.rating.map((star, index) => {
-              if (star)
-                return <HiStar key={index} className="fill-fonts_main" />;
-              return <HiOutlineStar key={index} />;
-            })}
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col h-[27vh]">
-        <p className="w-10/12 m-auto mb-5 text-xs text-center text-fonts_secondary tall:text-base :">
-          {product.description}
-        </p>
-        <button
-          className="w-11/12 p-4 mt-auto mb-3 ml-auto mr-auto font-extrabold rounded-lg bg-buttons_main text-fonts_main "
-          onClick={() => {
-            setIsBuying(true);
-          }}
-        >
-          Buy!
-        </button>
-      </section>
-      <div
-        className={`w-screen h-screen transition-opacity duration-300 pointer-events-none opacity-0 bg-black fixed z-40
-    top-0 left-0${isBuying ? " pointer-events-auto opacity-20 " : ""}`}
-        onClick={() => {
-          setIsBuying(false);
-        }}
-      ></div>
-      <div
-        className={`w-full rounded-3xl fixed bottom-0 z-40 left-0 translate-y-full transition-transform
-    ${isBuying ? " pointer-events-auto translate-y-0" : ""} `}
-      >
-        <div
-          className={`h-full w-[95%] rounded-t-3xl mt-auto ml-auto mr-auto flex flex-col justify-between bg-background_main_l`}
-        >
-          <div className="absolute top-2 w-1/3 border-2 border-[rgba(80,80,80,0.2)] left-[50%] -translate-x-1/2  " />
-          <h4 className="text-[1.4rem] text-fonts_main ml-auto mr-auto mt-7">
-            {product.name}
-          </h4>
-          <span className="m-auto mb-1 font-bold text-details">
-            Size {selectedSize}
-          </span>
-          <div className="grid w-full grid-cols-2 mb-6 text-fonts_secondary place-content-center">
-            <h4 className="m-auto text-2xl">
-              {" "}
-              {Number.parseFloat(product.price * amount).toFixed(2)}{" "}
-            </h4>
-            <div className="m-auto">
-              <button
-                onClick={handleDownAmount}
-                className="self-center px-2 text-black border-2 rounded-md border-details"
-              >
-                -
-              </button>
-              <span className="mx-3 text-2xl">{amount}</span>
-              <button
-                onClick={handleUpAmount}
-                className="self-center px-2 text-black border-2 rounded-md bg-details border-details"
-              >
-                +
-              </button>
+        </section>
+        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10">
+          {/* 
+        -----------------------------------------------------------------------------------------------------
+                                        PARTE DE LA DESCRIPCIÓN Y PRECIO
+        -----------------------------------------------------------------------------------------------------
+        */}
+          <div className="flex flex-col w-full mt-12">
+            <div className="flex justify-between w-full mb-3">
+              <div className="md:hidden">
+                <h3 className="inline ml-4 text-3xl font-bold text-fonts_main">
+                  ${product.price.toString().split(".")[0]}
+                </h3>
+                <span className="inline text-lg text-fonts_main">
+                  .{product.price.toString().split(".")[1]}
+                </span>
+              </div>
+              <div className="hidden md:block">
+                <h3 className="inline ml-4 text-3xl font-bold text-fonts_main">
+                  ${(product.price * amount).toString().split(".")[0]}
+                </h3>
+                <span className="inline text-lg text-fonts_main">
+                  .{(product.price * amount).toString().split(".")[1].substring(0,2)}
+                </span>
+              </div>
+              <div className="flex items-center mr-4">
+                {product.rating.map((star, index) => {
+                  if (star)
+                    return <HiStar key={index} className="fill-fonts_main" />;
+                  return <HiOutlineStar key={index} />;
+                })}
+              </div>
             </div>
           </div>
-          <p className="text-fonts_secondary text-base tall:text-lg w-[90%] mx-auto mt-1 text-center mb-8">
+          <p className="w-10/12 m-auto text-xs text-center text-fonts_secondary tall:text-base :">
             {product.description}
           </p>
-          <div className="flex items-center justify-center w-full ">
+          <div className="w-full my-4 hidden md:grid grid-cols-[25%,70%] gap-x-4">
+            <h4>Amount: {amount}</h4>
+            <input type='range' min={1} max={9} step={1} defaultValue={1} onChange={e => { setAmount(e.target.value) }} />
+          </div>
+          <button
+            className="w-11/12 p-4 mt-auto mb-3 ml-auto mr-auto font-extrabold rounded-lg bg-buttons_main text-fonts_main md:hidden"
+            onClick={() => {
+              setIsBuying(true);
+            }}
+          >
+            Buy!
+          </button>
+          <div className="flex justify-center flex-col w-full items-center">
             <button
-              className="w-[45%] cursor-pointer bg-opacity-40 text-opacity-40 mr-2 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
-         duration-200 grid grid-cols-[30%,70%] place-content-center bg-buttons_main rounded-md"
+              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 mr-10 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+         duration-200 grid-cols-[30%,70%] place-content-center bg-buttons_main rounded-md md:grid"
             >
               <BsCreditCard className="w-6 h-6 m-auto" />
               <span className="mr-4">Buy</span>
             </button>
             <button
               onClick={handleAddToCart}
-              className="w-[45%] cursor-pointer bg-opacity-40 text-opacity-40 ml-2 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
-         duration-200 grid grid-cols-[20%,80%] place-content-center bg-details rounded-md"
+              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 ml-5 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+         duration-200 grid-cols-[20%,80%] place-content-center bg-details rounded-md md:grid"
             >
               <AiOutlineShoppingCart className="w-6 h-6 ml-auto" />
               Add To Cart
             </button>
+          </div>
+        </section>
+        {/* 
+          ------------------------------------------------------------------------------------------------
+                                          PARTE DE LA COMPRA EN MOBILE
+          ------------------------------------------------------------------------------------------------
+      */}
+        <div
+          className={`w-screen h-screen transition-opacity duration-300 pointer-events-none opacity-0 bg-black fixed z-40
+    top-0 left-0${isBuying ? " pointer-events-auto opacity-20 " : ""}`}
+          onClick={() => {
+            setIsBuying(false);
+          }}
+        ></div>
+        <div
+          className={`w-full rounded-3xl fixed bottom-0 z-40 left-0 translate-y-full transition-transform
+    ${isBuying ? " pointer-events-auto translate-y-0" : ""} `}
+        >
+          <div
+            className={`h-full w-[95%] rounded-t-3xl mt-auto ml-auto mr-auto flex flex-col justify-between bg-background_main_l`}
+          >
+            <div className="absolute top-2 w-1/3 border-2 border-[rgba(80,80,80,0.2)] left-[50%] -translate-x-1/2  " />
+            <h4 className="text-[1.4rem] text-fonts_main ml-auto mr-auto mt-7">
+              {product.name}
+            </h4>
+            <span className="m-auto mb-1 font-bold text-details">
+              Size {selectedSize}
+            </span>
+            <div className="grid w-full grid-cols-2 mb-6 text-fonts_secondary place-content-center">
+              <h4 className="m-auto text-2xl">
+                {" "}
+                {Number.parseFloat(product.price * amount).toFixed(2)}{" "}
+              </h4>
+              <div className="m-auto">
+                <button
+                  onClick={handleDownAmount}
+                  className="self-center px-2 text-black border-2 rounded-md border-details"
+                >
+                  -
+                </button>
+                <span className="mx-3 text-2xl">{amount}</span>
+                <button
+                  onClick={handleUpAmount}
+                  className="self-center px-2 text-black border-2 rounded-md bg-details border-details"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <p className="text-fonts_secondary text-base tall:text-lg w-[90%] mx-auto mt-1 text-center mb-8">
+              {product.description}
+            </p>
+            <div className="flex items-center justify-center w-full ">
+              <button
+                className="w-[45%] cursor-pointer bg-opacity-40 text-opacity-40 mr-2 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+         duration-200 grid grid-cols-[30%,70%] place-content-center bg-buttons_main rounded-md"
+              >
+                <BsCreditCard className="w-6 h-6 m-auto" />
+                <span className="mr-4">Buy</span>
+              </button>
+              <button
+                onClick={handleAddToCart}
+                className="w-[45%] cursor-pointer bg-opacity-40 text-opacity-40 ml-2 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+         duration-200 grid grid-cols-[20%,80%] place-content-center bg-details rounded-md"
+              >
+                <AiOutlineShoppingCart className="w-6 h-6 ml-auto" />
+                Add To Cart
+              </button>
+            </div>
           </div>
         </div>
       </div>
