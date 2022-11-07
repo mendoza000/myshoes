@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addFav, removeFav, saveFavs } from "@store/actions/fav";
 import useIntersectionObserver from "hooks/useIntersectionObserver";
 
-const Card2 = ({ name, cardPhoto, id, price, rating }) => {
+const Card2 = ({ name, cardPhoto, id, price, rating, isInSlider }) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const favs = useSelector((state) => state.favs);
@@ -46,16 +46,22 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
       ref={fromRef}
       className="relative flex flex-col items-center justify-center min-w-[10rem]"
     >
-      <button
-        onClick={handleAddToFav}
-        className="absolute z-10 rounded-md shadow-md left-2 top-2"
-      >
-        <HiOutlineHeart
-          className={`w-8 h-8 stroke-buttons_main ${
-            listFavsClean.length === 1 ? "fill-buttons_main" : ""
-          }`}
-        />
-      </button>
+      {
+        !isInSlider &&
+        <button
+          onClick={handleAddToFav}
+          className="absolute z-10 rounded-md shadow-md left-2 top-2"
+        >
+          <HiOutlineHeart
+            className={`w-8 h-8 stroke-buttons_main ${listFavsClean.length === 1 ? "fill-buttons_main" : ""
+              }`}
+          />
+        </button>
+      }
+      {
+        isInSlider &&
+        <h4 className="text-center min-w-full text-md mt-2">{name}</h4>
+      }
       <div
         onClick={handleOpenProduct}
         className="bg-background_main_l rounded-xl max-h-40 custom-shadow children-overflow"
@@ -65,18 +71,23 @@ const Card2 = ({ name, cardPhoto, id, price, rating }) => {
           width={200}
           height={200}
           alt={name}
-          className={`-translate-y-12 transition-transform duration-700 ${
-            isInViewPort && "-rotate-6 scale-110 -translate-y-14"
-          }`}
+          className={`-translate-y-12 transition-transform duration-700 ${isInViewPort && "-rotate-6 scale-110 -translate-y-14"
+            }`}
         />
-        <div className="flex items-center justify-around min-w-full -translate-y-11">
-          <span className="text-fonts_secondary">${price}</span>
-          <span className="p-1 bg-buttons_main bg-opacity-30 rounded-xl">
-            In stock
-          </span>
-        </div>
+        {
+          !isInSlider &&
+          <div className="flex items-center justify-around min-w-full -translate-y-11">
+            <span className="text-fonts_secondary">${price}</span>
+            <span className="p-1 bg-buttons_main bg-opacity-30 rounded-xl">
+              In stock
+            </span>
+          </div>
+        }
       </div>
-      <h4 className="min-h-[3rem] text-left min-w-full text-md mt-2">{name}</h4>
+      {
+        !isInSlider &&
+        <h4 className="min-h-[3rem] text-left min-w-full text-md mt-2">{name}</h4>
+      }
     </div>
   );
 };
