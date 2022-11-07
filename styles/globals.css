@@ -20,6 +20,12 @@
 .custom-shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
 }
+.custom-shadow-bottom-right {
+  box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
+}
+
 .waveform {
   --uib-size: 40px;
   --uib-speed: 1s;
