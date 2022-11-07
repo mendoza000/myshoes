@@ -74,14 +74,16 @@ const Slider = () => {
   }
 
   return (
-    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7">
+    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[900px]">
       <button className="grid place-content-center absolute z-20 bg-gradient-to-r from-[rgba(25,25,25,0.2)] to-transparent h-full w-20 top-0 left-0" onClick={handlePrevIndex}>
         <FaAngleLeft className="w-16 h-16 opacity-50" />
       </button>
       {
         shoes?.map(shoe => {
-          return <div key={shoe.id} className={`transition-all duration-200 absolute ${shoe.isActual ? 'scale-105 z-20 left-1/2 -translate-x-1/2 top-3' : 'scale-50 pointer-events-none '}
-          ${shoe.isPrev ? '-left-6' : ''} ${shoe.isNext ? '-right-6' : ''} ${shoe.isPrevPrev || shoe.isNextNext ? 'hidden' : ''}`}>
+          return <div key={shoe.id} className={`transition-all duration-200 absolute ${shoe.isActual ? 'scale-105 z-20 left-1/2 -translate-x-1/2 ' : 'scale-50 pointer-events-none '}
+          ${shoe.isPrev ? '-left-6 md:left-28 md:scale-75 md:z-10 lg:scale-105 lg:left-32 lg:pointer-events-auto ' : ''}
+           ${shoe.isNext ? '-right-6 md:right-28 md:scale-75 lg:scale-105 lg:right-32 md:z-10 lg:pointer-events-auto' : ''}
+           ${shoe.isPrevPrev ? 'hidden md:block md:left-0' : ''} ${shoe.isNextNext ? 'hidden md:block md:right-0' : ''}`}>
             <Card2 {...shoe} isInSlider={true} />
           </div>
         })
