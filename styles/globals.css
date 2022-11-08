@@ -15,7 +15,7 @@
 
 .children-overflow span {
   pointer-events: none;
-  overflow: visible!important;
+  overflow: visible !important;
 }
 .custom-shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
@@ -75,10 +75,32 @@
 }
 
 .select-label:checked + label {
-  background-color: #47B5FF;
+  background-color: #47b5ff;
   color: white;
-  box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
-  -webkit-box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
-  -moz-box-shadow: -3px 3px 7px -1px rgba(0,0,0,0.4);
-  transform:translateY(-2px);
+  box-shadow: -3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -3px 3px 7px -1px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.min-h-full-force {
+  height: 100% !important;
+}
+
+@keygrames changeBorder {
+  0% {
+    border-radius: 58% 42% 36% 64% / 54% 48% 52% 46%;
+  }
+
+  100 {
+    border-radius: 43% 57% 57% 43% / 30% 61% 39% 70%;
+  }
+}
+
+.custom-border {
+  /* border-radius: 58% 42% 36% 64% / 54% 48% 52% 46%;
+  animation-name: changeBorder;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-duration: 5s; */
 }

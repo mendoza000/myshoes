@@ -21,13 +21,7 @@
     "isFromMan": true,
     "id": 1,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ],
+    "rating": [true, true, true, true, false],
     "IntRating": 4
   },
   {
@@ -52,13 +46,7 @@
     "isFromMan": true,
     "id": 2,
     "price": 182.55,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      true
-    ],
+    "rating": [true, true, true, true, true],
     "IntRating": 4
   },
   {
@@ -83,13 +71,7 @@
     "isFromMan": false,
     "id": 3,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Max Bella TR 5",
@@ -113,13 +95,7 @@
     "isFromMan": false,
     "id": 4,
     "price": 147.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Winflo 9",
@@ -143,13 +119,7 @@
     "isFromMan": false,
     "id": 22,
     "price": 135.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Zoom Pegasus 39",
@@ -173,13 +143,7 @@
     "isFromMan": false,
     "id": 5,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Zoom Pegasus FlyEase",
@@ -203,13 +167,7 @@
     "isFromMan": false,
     "id": 6,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Zoom Structure 24",
@@ -233,13 +191,7 @@
     "isFromMan": false,
     "id": 7,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Air Zoom SuperRep 3",
@@ -263,13 +215,7 @@
     "isFromMan": false,
     "id": 8,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Free Run 5.0",
@@ -293,13 +239,7 @@
     "isFromMan": false,
     "id": 9,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "React Pegasus Trail 4 GORE-TEX",
@@ -323,13 +263,7 @@
     "isFromMan": false,
     "id": 10,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "React Pegasus Trail 4",
@@ -353,13 +287,7 @@
     "isFromMan": false,
     "id": 11,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Metcon 8",
@@ -383,13 +311,7 @@
     "isFromMan": false,
     "id": 12,
     "price": 145.99,
-    "rating": [
-      true,
-      true,
-      true,
-      false,
-      false
-    ]
+    "rating": [true, true, true, false, false]
   },
   {
     "name": "Kyrie Low 5",
@@ -413,13 +335,7 @@
     "isFromMan": true,
     "id": 13,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   },
   {
     "name": "Air Max Terrascape Plus",
@@ -443,13 +359,7 @@
     "isFromMan": true,
     "id": 14,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   },
   {
     "name": "Air Max Plus",
@@ -473,13 +383,7 @@
     "isFromMan": true,
     "id": 15,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   },
   {
     "name": "Lunar Force",
@@ -503,13 +407,7 @@
     "isFromMan": true,
     "id": 16,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   },
   {
     "name": "SFB 6 Leather",
@@ -533,13 +431,7 @@
     "isFromMan": true,
     "id": 17,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   },
   {
     "name": "Air Vapormax Plus",
@@ -563,12 +455,6 @@
     "isFromMan": true,
     "id": 21,
     "price": 127.99,
-    "rating": [
-      true,
-      true,
-      true,
-      true,
-      false
-    ]
+    "rating": [true, true, true, true, false]
   }
 ]
