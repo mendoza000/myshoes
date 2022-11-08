@@ -4,7 +4,7 @@ import data from "../api/data.json";
 import Image from "next/image";
 import { HiOutlineHeart, HiOutlineStar, HiStar } from "react-icons/hi";
 import { BsCreditCard } from "react-icons/bs";
-import { AiOutlineEye, AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { addFav, removeFav, saveFavs } from "@store/actions/fav";
 import { cartAdd, cartSave } from "@store/actions/cart";
@@ -85,7 +85,7 @@ export default function Product() {
   return (
     <div className="w-screen h-screen overflow-hidden flex justify-center bg-background_main_l">
       <div className="flex flex-col w-full h-full md:w-11/12 animate__animated animate__fadeInUp animate__faster
-    md:flex-row max-w-[1000px] lg:gap-x-20">
+    md:flex-row max-w-[1000px] lg:gap-x-20 md:ml" >
         <Toaster />
         {/* 
       -------------------------------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ export default function Product() {
           <div
             className='ml-auto mr-auto rounded-md bg-background_main_l w-11/12 h-full md:h-[55%] overflow-hidden relative after:bg-[url("/nike-logo.svg")] after:h-full
       after:w-full after:max-w-[330px] after:content-[""] after:absolute after:bg-no-repeat after:bg-gray after:top-1/2 after:left-1/2 after:-translate-x-1/2
-      after:-translate-y-[50%] after:z-0 after:bg-center after:bg-cover after:contrast-100 after:opacity-60 md:mb-10'
+      after:-translate-y-[50%] after:z-0 after:bg-center after:bg-cover after:contrast-100 after:opacity-60 md:mb-8 '
           >
             {/* After es la imágen de nike */}
             <div className="relative z-20 w-full mb-auto overflow-hidden h-5/6">
@@ -204,7 +204,7 @@ export default function Product() {
             })}
           </div>
         </section>
-        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10">
+        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow-bottom-right">
           {/* 
         -----------------------------------------------------------------------------------------------------
                                         PARTE DE LA DESCRIPCIÓN Y PRECIO
@@ -225,7 +225,7 @@ export default function Product() {
                   ${(product.price * amount).toString().split(".")[0]}
                 </h3>
                 <span className="inline text-lg text-fonts_main">
-                  .{(product.price * amount).toString().split(".")[1].substring(0,2)}
+                  .{(product.price * amount).toString().split(".")[1].substring(0, 2)}
                 </span>
               </div>
               <div className="flex items-center mr-4">
@@ -236,13 +236,36 @@ export default function Product() {
                 })}
               </div>
             </div>
+                <div className="md:flex gap-x-2 mx-auto hidden">
+                  <span className="mr-2">Size:</span>
+                  {
+                    sizes.map((size) => {
+                      return (
+                        <div
+                          key={size}
+                          className={`w-6 h-6 duration-100 cursor-pointer ${selectedSize === size
+                            ? "bg-black bg-opacity-10"
+                            : "bg-black bg-opacity-50 text-background_main_l"
+                            } rounded-md grid place-content-center`}
+                          onClick={() => {
+                            setSelectedSize(size);
+                          }}
+                        >
+                          <span className=" text-xs">
+                            {size}
+                          </span>
+                        </div>
+                      );
+                    })
+                  }
+                </div>
           </div>
-          <p className="w-10/12 m-auto text-xs text-center text-fonts_secondary tall:text-base :">
+          <p className="w-10/12 m-auto text-xs text-center text-fonts_secondary tall:text-base md:text-xs :">
             {product.description}
           </p>
           <div className="w-full my-4 hidden md:grid grid-cols-[25%,70%] gap-x-4">
             <h4>Amount: {amount}</h4>
-            <input type='range' min={1} max={9} step={1} defaultValue={1} onChange={e => { setAmount(e.target.value) }} />
+            <input type='range' min={1} max={10} step={1} defaultValue={1} onChange={e => { setAmount(parseInt(e.target.value)) }} />
           </div>
           <button
             className="w-11/12 p-4 mt-auto mb-3 ml-auto mr-auto font-extrabold rounded-lg bg-buttons_main text-fonts_main md:hidden"

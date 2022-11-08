@@ -44,7 +44,7 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
   return (
     <div
       ref={fromRef}
-      className="relative flex flex-col items-center justify-center min-w-[10rem] max-w-[12rem] mx-auto"
+      className="relative flex flex-col items-center justify-center min-w-[10rem] max-w-[12rem] mx-auto cursor-pointer"
     >
       {!isInSlider && (
         <button
