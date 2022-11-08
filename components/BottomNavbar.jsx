@@ -10,7 +10,7 @@ const BottomNavbar = () => {
   return (
     <>
       {router.pathname !== "/product/[id]" && (
-        <div className="fixed bottom-0 min-w-full py-4 bottom-navbar custom-shadow bg-background_main_l">
+        <div className="fixed bottom-0 min-w-full py-4 bottom-navbar custom-shadow bg-background_main_l md:hidden">
           <ul className="flex items-center justify-around min-w-full">
             <li>
               <Link href={"/"}>
