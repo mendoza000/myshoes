@@ -1,0 +1,42 @@
+{
+  "en": {
+    "title": "About Us",
+    "description": "We are Omar and Yonathan, two young guys from latin america who created this page togheter using github to demostrate our habilities.",
+    "gitbutton": "This proyect Github"
+  },
+  "es": {
+    "title": "Sobre Nosotros",
+    "description": "Nosotros somos Omar y Yonathan, dos jovenes de latinoamérica que crearon esta página en conjunto utilizando github para demostrar nuestras habilidades.",
+    "gitbutton": "El Github de este proyecto"
+  },
+  "ourData": {
+    "omar": {
+      "smalldesc": {
+        "en": "Junior Web Developer",
+        "es": "Desarrollador Web Junior"
+      },
+      "description": {
+        "en": "Hello ✌. I am a young man very passionate about technology, mainly in the development of applications and web services.",
+        "es": "Hola ✌. Soy un joven muy apasionado por la tecnología, principalmente en el desarrollo de aplicaciones y servicios web."
+      },
+      "name": "Omar Mendoza",
+      "photo": "/profile-omar.jpg"
+    },
+    "yon": {
+      "smalldesc": {
+        "en": "Junior Web Developer",
+        "es": "Desarrollador Web Junior"
+      },
+      "description": {
+        "es": "Hola! 👋, soy un joven de Argentina que ama desarrollar aplicaciones web 🔗.",
+        "en": "Hello! 👋, im a young man from Argentina who loves developing web aplications 🔗."
+      },
+      "funfact": {
+        "es": "Funfact: Jugamos piedra papel o tijeras para ver quien aparecía primero por defecto en esta página y perdí 😔.",
+        "en": "Funfact: We played rock paper scissors to determine who was first by default in this page and i lost 😔."
+      },
+      "name": "Yonathan Picone",
+      "photo": "/profile_yon.jpg"
+    }
+  }
+}

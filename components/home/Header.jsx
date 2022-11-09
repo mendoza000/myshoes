@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -35,9 +36,11 @@ const Header = () => {
             officia.
           </p>
 
-          <button className="max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl text-background_main hover:scale-105">
+          <a className="max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl 
+          text-background_main hover:scale-105 grid place-content-center"
+          href='#shop' >
             Go to products
-          </button>
+          </a>
         </div>
 
         {/* col */}

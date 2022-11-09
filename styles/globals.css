@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  scroll-behavior: smooth!important;
+}
+
 @layer base {
   html {
     font-family: "Rubik", system-ui, sans-serif;

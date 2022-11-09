@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CiGrid41, CiDark, MdDarkMode as DarkMode } from "react-icons/ci";
+import { HiSearch } from "react-icons/hi";
 import {
   AiOutlineHome,
   AiOutlineShoppingCart,
@@ -94,7 +95,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="w-full">
-          <div
+          <div title="About Us"
             className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
          hover:bg-buttons_main md:w-14"
           >
@@ -103,7 +104,7 @@ export default function Navbar() {
               About Us
             </span>
           </div>
-          <div
+          <div title="Dark Mode"
             className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
          hover:bg-buttons_main md:w-14"
           >

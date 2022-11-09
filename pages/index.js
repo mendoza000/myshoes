@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import { getFavs } from "@store/actions/fav";
 import PromoCard from "@components/ui/PromoCard";
 import Slider from "@components/ui/Slider";
-import useIntersectionObserver from "hooks/useIntersectionObserver";
 import Card2 from "@components/home/Card2";
 import Header from "@components/home/Header";
 
@@ -35,7 +34,7 @@ export default function Home() {
           <div className="waveform__bar"></div>
         </div>
       </div>
-      <div className="container min-h-screen bg-background_main animate__animated animate__fadeIn animate__faster">
+      <div className="container scroll-smooth min-h-screen min-w-full bg-background_main animate__animated animate__fadeIn animate__faster">
         {/* header only md & lg */}
         <Header />
 
@@ -48,7 +47,7 @@ export default function Home() {
         <div className="flex flex-col gap-10">
           <PromoCard />
           <Slider />
-          <div className="flex items-center gap-6 ml-5 md:ml-24">
+          <div id="shop" className="flex items-center gap-6 ml-5 md:ml-24">
             <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center border-b-2 border-b-buttons_main">
               News
             </h3>
