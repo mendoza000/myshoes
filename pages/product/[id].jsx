@@ -53,6 +53,7 @@ export default function Product() {
           name: product.name,
           price: product.price,
           rating: product.rating,
+          secondaryPhotos: product.secondaryPhotos,
         })
       );
     } else {
@@ -73,7 +74,7 @@ export default function Product() {
         price: product.price,
         rating: product.rating,
         size: selectedSize,
-        cardPhoto: product.cardPhoto,
+        secondaryPhotos: product.secondaryPhotos,
       })
     );
     toast.success("Successfully added to cart");
@@ -83,9 +84,11 @@ export default function Product() {
   if (product === null || product === undefined) return null;
 
   return (
-    <div className="w-screen h-screen overflow-hidden flex justify-center bg-background_main_l">
-      <div className="flex flex-col w-full h-full md:w-11/12 animate__animated animate__fadeInUp animate__faster
-    md:flex-row max-w-[1000px] lg:gap-x-20 md:ml" >
+    <div className="flex justify-center w-screen h-screen overflow-hidden bg-background_main_l">
+      <div
+        className="flex flex-col w-full h-full md:w-11/12 animate__animated animate__fadeInUp animate__faster
+    md:flex-row max-w-[1000px] lg:gap-x-20 md:ml"
+      >
         <Toaster />
         {/* 
       -------------------------------------------------------------------------------------------------------------
@@ -101,10 +104,11 @@ export default function Product() {
             className="absolute top-0 right-3"
           >
             <HiOutlineHeart
-              className={`w-8 h-8 duration-300 ${listFavsClean.length === 1
-                ? "fill-buttons_main stroke-buttons_main"
-                : ""
-                }`}
+              className={`w-8 h-8 duration-300 ${
+                listFavsClean.length === 1
+                  ? "fill-buttons_main stroke-buttons_main"
+                  : ""
+              }`}
             />
           </button>
         </section>
@@ -138,10 +142,11 @@ export default function Product() {
                 return (
                   <div
                     key={size}
-                    className={`w-full h-7 duration-300 ${selectedSize === size
-                      ? "bg-gray"
-                      : "bg-black bg-opacity-50 text-background_main_l"
-                      } rounded-md grid place-content-center`}
+                    className={`w-full h-7 duration-300 ${
+                      selectedSize === size
+                        ? "bg-gray"
+                        : "bg-black bg-opacity-50 text-background_main_l"
+                    } rounded-md grid place-content-center`}
                     onClick={() => {
                       setSelectedSize(size);
                     }}
@@ -161,10 +166,12 @@ export default function Product() {
                       setImage(photo);
                     }}
                   >
-
-                    <div className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
-                    ${image?.id !== photo.id ? 'opacity-100' : 'opacity-0 '} z-10 rounded-lg`}>
-                    </div>
+                    <div
+                      className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
+                    ${
+                      image?.id !== photo.id ? "opacity-100" : "opacity-0 "
+                    } z-10 rounded-lg`}
+                    ></div>
 
                     <Image
                       alt="Shoe Photo"
@@ -178,20 +185,22 @@ export default function Product() {
               })}
             </div>
           </div>
-          <div className="hidden w-full md:flex justify-center items-center absolute bottom-20">
+          <div className="absolute items-center justify-center hidden w-full md:flex bottom-20">
             {product.secondaryPhotos.map((photo) => {
               return (
                 <div
                   key={photo.id}
-                  className="relative ml-1 cursor-pointer flex"
+                  className="relative flex ml-1 cursor-pointer"
                   onClick={() => {
                     setImage(photo);
                   }}
                 >
-
-                  <div className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
-                    ${image?.id !== photo.id ? 'opacity-100' : 'opacity-0 '} z-10 rounded-lg`}>
-                  </div>
+                  <div
+                    className={`absolute w-full h-full top-1/2 -translate-y-1/2 left-0 bg-[rgba(55,55,55,.4)] transition-opacity duration-200
+                    ${
+                      image?.id !== photo.id ? "opacity-100" : "opacity-0 "
+                    } z-10 rounded-lg`}
+                  ></div>
                   <Image
                     alt="Shoe Photo"
                     width={90}
@@ -204,7 +213,7 @@ export default function Product() {
             })}
           </div>
         </section>
-        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow-bottom-right">
+        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow lg:p-10 lg:pt-5 rounded-xl md:max-w-sm md:p-5 md:pt-0 lg:max-w-none">
           {/* 
         -----------------------------------------------------------------------------------------------------
                                         PARTE DE LA DESCRIPCIÓN Y PRECIO
@@ -225,7 +234,11 @@ export default function Product() {
                   ${(product.price * amount).toString().split(".")[0]}
                 </h3>
                 <span className="inline text-lg text-fonts_main">
-                  .{(product.price * amount).toString().split(".")[1].substring(0, 2)}
+                  .
+                  {(product.price * amount)
+                    .toString()
+                    .split(".")[1]
+                    .substring(0, 2)}
                 </span>
               </div>
               <div className="flex items-center mr-4">
@@ -236,36 +249,45 @@ export default function Product() {
                 })}
               </div>
             </div>
-                <div className="md:flex gap-x-2 mx-auto hidden">
-                  <span className="mr-2">Size:</span>
-                  {
-                    sizes.map((size) => {
-                      return (
-                        <div
-                          key={size}
-                          className={`w-6 h-6 duration-100 cursor-pointer ${selectedSize === size
-                            ? "bg-black bg-opacity-10"
-                            : "bg-black bg-opacity-50 text-background_main_l"
-                            } rounded-md grid place-content-center`}
-                          onClick={() => {
-                            setSelectedSize(size);
-                          }}
-                        >
-                          <span className=" text-xs">
-                            {size}
-                          </span>
-                        </div>
-                      );
-                    })
-                  }
-                </div>
+            <div className="hidden mx-auto md:flex gap-x-2">
+              <span className="mr-2">Size:</span>
+              {sizes.map((size) => {
+                return (
+                  <div
+                    key={size}
+                    className={`w-6 h-6 duration-100 cursor-pointer ${
+                      selectedSize === size
+                        ? "bg-black bg-opacity-10"
+                        : "bg-black bg-opacity-50 text-background_main_l"
+                    } rounded-md grid place-content-center`}
+                    onClick={() => {
+                      setSelectedSize(size);
+                    }}
+                  >
+                    <span className="text-xs ">{size}</span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <p className="w-10/12 m-auto text-xs text-center text-fonts_secondary tall:text-base md:text-xs :">
             {product.description}
           </p>
-          <div className="w-full my-4 hidden md:grid grid-cols-[25%,70%] gap-x-4">
+          <div className="w-full my-4 hidden md:grid grid-cols-[25%,70%] gap-x-4 items-center">
             <h4>Amount: {amount}</h4>
-            <input type='range' min={1} max={10} step={1} defaultValue={1} onChange={e => { setAmount(parseInt(e.target.value)) }} />
+            <input
+              type="range"
+              min={1}
+              max={10}
+              step={1}
+              defaultValue={1}
+              onChange={(e) => {
+                setAmount(parseInt(e.target.value));
+              }}
+              className={
+                "bg-buttons_main appearance-none h-2 rounded-xl bg-opacity-30"
+              }
+            />
           </div>
           <button
             className="w-11/12 p-4 mt-auto mb-3 ml-auto mr-auto font-extrabold rounded-lg bg-buttons_main text-fonts_main md:hidden"
@@ -275,7 +297,7 @@ export default function Product() {
           >
             Buy!
           </button>
-          <div className="flex justify-center flex-col w-full items-center">
+          <div className="flex flex-col items-center justify-center w-full">
             <button
               className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 mr-10 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
          duration-200 grid-cols-[30%,70%] place-content-center bg-buttons_main rounded-md md:grid"

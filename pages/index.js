@@ -45,8 +45,10 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="">
-          <div className="flex justify-center gap-6">
+        <div className="flex flex-col gap-10">
+          <PromoCard />
+          <Slider />
+          <div className="flex items-center gap-6 ml-5 md:ml-24">
             <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center border-b-2 border-b-buttons_main">
               News
             </h3>
@@ -57,9 +59,6 @@ export default function Home() {
               Comming
             </h3>
           </div>
-
-          <PromoCard />
-          <Slider />
           <div className="grid items-center justify-center w-full h-full grid-cols-2 px-5 py-2 mb-10 overflow-hidden gap-x-6 md:gap-x-0 md:max-w-[93%] md:ml-14 md:grid-cols-3 md:gap-y-5 md:mb-0 lg:grid-cols-4">
             {data.map((shoe) => {
               return <Card2 key={shoe.id} {...shoe} />;
