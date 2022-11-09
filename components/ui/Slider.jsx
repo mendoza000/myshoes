@@ -69,12 +69,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[900px]">
+    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[900px] mx-auto">
       <button
-        className="grid place-content-center absolute z-20 bg-gradient-to-r from-[rgba(25,25,25,0.2)] to-transparent h-full w-20 top-0 left-0"
+        className="grid place-content-center absolute z-20 hover:bg-gradient-to-r hover:from-[rgba(25,25,25,0.1)]
+        hover:to-transparent h-full w-20 top-0 left-0"
         onClick={handlePrevIndex}
       >
-        <FaAngleLeft className="w-16 h-16 opacity-50" />
+        <FaAngleLeft className="w-16 h-16 opacity-90 fill-fonts_main" />
       </button>
       {shoes?.map((shoe) => {
         return (
@@ -104,7 +105,8 @@ const Slider = () => {
         );
       })}
       <button
-        className="absolute top-0 right-0 z-20 grid w-20 h-full place-content-center"
+        className="absolute top-0 right-0 z-20 grid w-20 h-full place-content-center hover:bg-gradient-to-r 
+        hover:to-[rgba(25,25,25,0.1)] hover:from-transparent"
         onClick={handleNextIndex}
       >
         <FaAngleRight className="w-16 h-16 opacity-90 fill-fonts_main" />
