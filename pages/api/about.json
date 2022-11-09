@@ -1,7 +1,7 @@
 {
   "en": {
     "title": "About Us",
-    "description": "We are Omar and Yonathan, two young guys from latin america who created this page togheter using github to demostrate our habilities.",
+    "description": "We are Omar and Yonathan, two young guys from Latin America who created this page together using github to demostrate our habilities.",
     "gitbutton": "This proyect Github"
   },
   "es": {
@@ -29,7 +29,7 @@
       },
       "description": {
         "es": "Hola! 👋, soy un joven de Argentina que ama desarrollar aplicaciones web 🔗.",
-        "en": "Hello! 👋, im a young man from Argentina who loves developing web aplications 🔗."
+        "en": "Hello! 👋, I'm a young man from Argentina who loves developing web aplications 🔗."
       },
       "funfact": {
         "es": "Funfact: Jugamos piedra papel o tijeras para ver quien aparecía primero por defecto en esta página y perdí 😔.",

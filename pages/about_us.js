@@ -12,7 +12,7 @@ export default function About_us() {
     language === 'en' ? setLanguage('es') : setLanguage('en')
   }
   return <div className='min-h-screen w-full flex items-center flex-col bg-background_main_l overflow-x-hidden'>
-    <button className='absolute right-2 top-5 flex items-center text-md'
+    <button className='absolute right-8 top-5 flex items-center text-md'
       onClick={handleLanguageChange}>
       <HiLanguage className='fill-fonts_main h-7 w-7' />
       {
@@ -50,8 +50,8 @@ export default function About_us() {
                                               OMAR
         ------------------------------------------------------------------------------------
       */}
-        <div className={`flex w-11/12 mx-auto mt-4 items-center justify-center bg-background_main_l`}>
-          <div className='w-1/2'>
+        <div className={`flex w-11/12 mx-auto mt-4 items-center gap-5 justify-center bg-background_main_l`}>
+          <div className='w-1/3'>
             <h3 className='text-3xl text-fonts_main text-center'>{data.ourData.omar.name}</h3>
             <h4 className='text-md mt-3 text-center'>{data.ourData.omar.smalldesc[language]}</h4>
           </div>
@@ -62,7 +62,7 @@ export default function About_us() {
             height={150}
             className='rounded-[50%]' />
         </div>
-        <p className='text-md w-11/12 mx-auto mt-4 text-fonts_main'>{data.ourData.omar.description[language]}</p>
+        <p className='text-md w-11/12 max-w-[550px] mx-auto mt-4 text-fonts_main'>{data.ourData.omar.description[language]}</p>
         <div className='flex w-full justify-center mt-5 gap-3 mb-16'>
           <div className='py-2 px-4 border-[2px] border-buttons_main rounded-xl '>
             <BsTwitter className='h-8 w-8 fill-buttons_main ' />
@@ -81,8 +81,8 @@ export default function About_us() {
                                         YONEXT
         ---------------------------------------------------------------------------------------
          */}
-        <div className={`flex w-11/12 mx-auto mt-4 items-center justify-center`}>
-          <div className='w-1/2'>
+        <div className={`flex w-11/12 mx-auto mt-4 gap-6 items-center justify-center`}>
+          <div className='w-1/3'>
             <h3 className='text-3xl text-fonts_main text-center'>{data.ourData.yon.name}</h3>
             <h4 className='text-md mt-3 text-center'>{data.ourData.yon.smalldesc[language]}</h4>
           </div>
@@ -93,10 +93,8 @@ export default function About_us() {
             height={150}
             className='rounded-[50%]' />
         </div>
-        <div className='text-md w-11/12 mx-auto mt-4 text-fonts_main'>
-          <span>{data.ourData.yon.description[language]}</span>
-          <span className='text-sm w-11/12 block text-[rgb(130,130,130)] mt-4 mx-auto'>{data.ourData.yon.funfact[language]}</span>
-        </div>
+        <p className='text-md w-11/12 max-w-[550px] mx-auto mt-4 text-fonts_main'>{data.ourData.yon.description[language]}</p>
+        <span className='text-sm w-2/3 max-w-[400px] block text-[rgb(130,130,130)] mt-4 mx-auto'>{data.ourData.yon.funfact[language]}</span>
         <div className='flex w-full justify-center mt-5 gap-3 mb-16'>
           <a href='https://www.instagram.com/yoni_oc/' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-[#E1306C] rounded-xl '>
             <BsInstagram className='h-8 w-8 fill-[#E1306C] ' />

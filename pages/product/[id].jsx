@@ -204,13 +204,16 @@ export default function Product() {
             })}
           </div>
         </section>
-        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow-bottom-right">
+        <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow pb-4 px-2">
           {/* 
         -----------------------------------------------------------------------------------------------------
                                         PARTE DE LA DESCRIPCIÓN Y PRECIO
         -----------------------------------------------------------------------------------------------------
         */}
-          <div className="flex flex-col w-full mt-12">
+          <div className="flex flex-col w-full mt-6">
+            <div className="w-full hidden md:flex text-xl justify-center mb-6">
+              <span>{product?.name}</span>
+            </div>
             <div className="flex justify-between w-full mb-3">
               <div className="md:hidden">
                 <h3 className="inline ml-4 text-3xl font-bold text-fonts_main">
@@ -236,29 +239,29 @@ export default function Product() {
                 })}
               </div>
             </div>
-                <div className="md:flex gap-x-2 mx-auto hidden">
-                  <span className="mr-2">Size:</span>
-                  {
-                    sizes.map((size) => {
-                      return (
-                        <div
-                          key={size}
-                          className={`w-6 h-6 duration-100 cursor-pointer ${selectedSize === size
-                            ? "bg-black bg-opacity-10"
-                            : "bg-black bg-opacity-50 text-background_main_l"
-                            } rounded-md grid place-content-center`}
-                          onClick={() => {
-                            setSelectedSize(size);
-                          }}
-                        >
-                          <span className=" text-xs">
-                            {size}
-                          </span>
-                        </div>
-                      );
-                    })
-                  }
-                </div>
+            <div className="md:flex gap-x-2 mx-auto hidden">
+              <span className="mr-2">Size:</span>
+              {
+                sizes.map((size) => {
+                  return (
+                    <div
+                      key={size}
+                      className={`w-6 h-6 duration-100 cursor-pointer ${selectedSize === size
+                        ? "bg-black bg-opacity-10"
+                        : "bg-black bg-opacity-50 text-background_main_l"
+                        } rounded-md grid place-content-center`}
+                      onClick={() => {
+                        setSelectedSize(size);
+                      }}
+                    >
+                      <span className=" text-xs">
+                        {size}
+                      </span>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
           <p className="w-10/12 m-auto text-xs text-center text-fonts_secondary tall:text-base md:text-xs :">
             {product.description}
@@ -275,9 +278,9 @@ export default function Product() {
           >
             Buy!
           </button>
-          <div className="flex justify-center flex-col w-full items-center">
+          <div className="flex justify-center flex-col items-center w-11/12 mx-auto ">
             <button
-              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 mr-10 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 mr-10 ml-1 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
          duration-200 grid-cols-[30%,70%] place-content-center bg-buttons_main rounded-md md:grid"
             >
               <BsCreditCard className="w-6 h-6 m-auto" />
@@ -285,7 +288,7 @@ export default function Product() {
             </button>
             <button
               onClick={handleAddToCart}
-              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 ml-5 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
+              className="w-11/12 hidden cursor-pointer bg-opacity-40 text-opacity-40 ml-10 pt-3 pb-3 mb-2 hover:bg-opacity-70 transition-colors
          duration-200 grid-cols-[20%,80%] place-content-center bg-details rounded-md md:grid"
             >
               <AiOutlineShoppingCart className="w-6 h-6 ml-auto" />
