@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="container min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow">
+    <div className="container hidden min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow md:grid">
       {/* top bar */}
       <div className="flex items-center justify-between">
         <Image
