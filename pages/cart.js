@@ -3,6 +3,7 @@ import AlertInfo from "@components/ui/AlertInfo";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { HiOutlineCreditCard } from "react-icons/hi";
+import InfoPayMd from "@components/cart/InfoPayMd";
 
 const Cart = () => {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -16,12 +17,10 @@ const Cart = () => {
     setTotalPrice(x);
   }, [cart]);
 
-  console.log(cart);
-
   return (
-    <div className="container min-h-screen pb-20 bg-background_main animate__animated animate__fadeIn animate__faster">
+    <div className="container min-h-screen pb-20 bg-background_main animate__animated animate__fadeIn animate__faster lg:max-w-4xl md:mx-auto md:max-w-xl">
       <div className="flex items-center justify-center px-6 py-4">
-        <h1 className="text-3xl font-bold text-center fill-fonts_main ">
+        <h1 className="text-3xl font-bold text-center md:mt-5 fill-fonts_main ">
           Cart
         </h1>
       </div>
@@ -29,7 +28,7 @@ const Cart = () => {
       {cart?.length < 1 && <AlertInfo message={"This cart is empty!"} />}
 
       {cart?.length >= 1 && (
-        <div className="flex items-center justify-between p-3 mx-5 mb-5 border-2 border-opacity-50 shadow-md border-buttons_main bg-background_main_l rounded-xl">
+        <div className="flex items-center justify-between p-3 mx-5 mb-5 border-2 border-opacity-50 shadow-md border-buttons_main bg-background_main_l rounded-xl md:mb-10">
           <span>
             Items:
             {cart ? cart.length : " 0"}
@@ -39,19 +38,23 @@ const Cart = () => {
         </div>
       )}
 
-      <div className="flex flex-col gap-4 mx-5">
-        {cart?.map((e) => {
-          // TODO: falta terminar las cards del carrito
-          return <Card key={e.id} {...e} />;
-        })}
-      </div>
+      <div className="grid gap-4 md:grid-cols-2">
+        <div className="flex flex-col gap-10">
+          {cart?.map((e) => {
+            // TODO: falta terminar las cards del carrito
+            return <Card key={e.id} {...e} />;
+          })}
+        </div>
 
-      {cart.length >= 1 && (
-        <button className="flex items-center justify-center gap-1 px-10 py-4 mx-auto shadow-xl mt-7 bg-opacity-80 bg-buttons_main rounded-xl">
-          <HiOutlineCreditCard className="w-5 h-5" />
-          Continue with the payment
-        </button>
-      )}
+        <InfoPayMd cart={cart} />
+
+        {cart.length >= 1 && (
+          <button className="flex items-center justify-center gap-1 px-10 py-4 mx-auto shadow-xl md:hidden mt-7 bg-opacity-80 bg-buttons_main rounded-xl">
+            <HiOutlineCreditCard className="w-5 h-5" />
+            Continue with the payment
+          </button>
+        )}
+      </div>
     </div>
   );
 };

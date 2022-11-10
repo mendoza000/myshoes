@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { HiLanguage } from "react-icons/hi2";
 import { BsGithub, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { SiReact, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import data from "./api/about.json"
 import Image from 'next/image';
 
@@ -25,6 +27,20 @@ export default function About_us() {
     <div className='mt-6 w-11/12 text-center text-fonts_secondary'>
       <h3 className='max-w-screen-sm mx-auto'>{data[language].description}</h3>
     </div>
+    <div className='w-1/2 mx-auto flex flex-wrap gap-4 justify-center mt-4'>
+      <div className='rounded-md flex items-center gap-2 px-4 py-2 bg-[#61DBFB]'>
+        <SiReact className='h-7 w-7' />
+        <span className='text-cl'>React</span>
+      </div>
+      <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(20,20,20)]'>
+        <TbBrandNextjs className='h-7 w-7' />
+        <span className='text-cl'>NextJs</span>
+      </div>
+      <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(55,154,177)]'>
+        <SiTailwindcss className='h-7 w-7' />
+        <span className='text-cl'>TailwindCSS</span>
+      </div>
+    </div>
     <div className='w-full mt-6 '>
       <a href='https://github.com/mendoza000/myshoes' target='_blank' rel='noreferrer' className='w-max bg-black text-[rgb(255,255,255)] rounded-md p-3 mx-auto flex'>
         <BsGithub className='fill-[#FFF] h-6 w-6 my-auto mr-2' />
@@ -34,7 +50,7 @@ export default function About_us() {
       </a>
     </div>
     <div className='w-full flex justify-center items-center mt-6 text-lg'>
-      <div className='flex justify-center gap-6 items-center relative'>
+      <div className='flex justify-center gap-6 items-center relative text-2xl'>
         <button className={``}
           onClick={() => setCurrentPerson('omar')} >Omar</button>
         <button className={``}

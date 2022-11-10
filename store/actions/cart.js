@@ -10,7 +10,7 @@ export const cartAdd = (item) => {
 export const cartRemoveItem = (item) => {
   return {
     type: types.CART_REMOVE,
-    payload: item.id,
+    payload: item,
   };
 };
 

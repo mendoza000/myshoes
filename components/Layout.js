@@ -14,12 +14,12 @@ const Layout = ({ children }) => {
   }, [dispatch]);
 
   return (
-    <>
+    <div className="bg-background_main">
       <Navbar />
       <main>{children}</main>
       <BottomNavbar />
       {/* y el footer si vamos a poner */}
-    </>
+    </div>
   );
 };
 
