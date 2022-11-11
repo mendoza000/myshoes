@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
@@ -16,6 +17,10 @@ module.exports = {
       black: "#000",
       light_gray: "rgb(202, 202, 202)",
       dark_gray: "rgb(61, 61, 61)",
+
+      bg_dark: "#292b40",
+      bg_dark_xl: "#6B728E",
+      bg_dark_o: "#1f2133",
     },
     extend: {
       fontFamily: {

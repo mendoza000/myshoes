@@ -4,55 +4,55 @@ import { HiOutlineCreditCard } from "react-icons/hi";
 const InfoPayMd = ({ cart }) => {
   if (cart.length >= 1)
     return (
-      <div className="min-h-[25rem] max-h-[25rem] bg-background_main_l custom-shadow rounded-xl hidden md:flex flex-col px-5 justify-center items-center gap-8">
+      <div className="min-h-[25rem] max-h-[25rem] bg-background_main_l custom-shadow rounded-xl hidden md:flex flex-col px-5 justify-center items-center gap-8 dark:bg-bg_dark_o">
         <div className="flex flex-col max-w-full gap-2">
-          <h4 className="max-w-[100%] font-bold text-left border-b-2 border-opacity-50 border-b-dark_gray text-xl">
-            Deliverpy info
+          <h4 className="max-w-[100%] font-bold text-left border-b-2 border-opacity-50 border-b-dark_gray text-xl dark:text-background_main_l">
+            Delivery info
           </h4>
 
           <input
             type="text"
             placeholder="Street"
-            className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80 max-w-[100%]"
+            className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
           />
 
           <div className="grid items-center justify-center grid-cols-2 gap-2">
             <input
               type="text"
               placeholder="City"
-              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80"
+              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
             />
 
             <input
               type="text"
               placeholder="No. Apartment"
-              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80"
+              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
             />
           </div>
         </div>
 
         <div className="flex flex-col max-w-full gap-2">
-          <h4 className="max-w-[100%] font-bold text-left border-b-2 border-opacity-50 border-b-dark_gray text-xl">
+          <h4 className="max-w-[100%] font-bold text-left border-b-2 border-opacity-50 border-b-dark_gray text-xl dark:text-background_main_l">
             Pay info
           </h4>
 
           <input
             type="number"
             placeholder="Card Number"
-            className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80 max-w-[100%]"
+            className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
           />
 
           <div className="grid items-center justify-center grid-cols-2 gap-2">
             <input
               type="date"
               placeholder="Date"
-              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80"
+              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
             />
 
             <input
               type="number"
               placeholder="CVC"
-              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l border-buttons_main border-opacity-30 hover:border-opacity-80"
+              className="px-3 py-1 duration-300 border-2 rounded-md outline-none bg-background_main_l dark:bg-bg_dark_o dark:border-bg_dark dark:border-opacity-80 border-buttons_main border-opacity-30 hover:border-opacity-80 dark:hover:border-opacity-100 dark:text-background_main_l"
             />
           </div>
         </div>

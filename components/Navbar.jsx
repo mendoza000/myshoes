@@ -25,6 +25,11 @@ export default function Navbar() {
   const handleBack = () => {
     router.back();
   };
+  const handleChangeTheme = () => {
+    document.documentElement.classList.contains("dark")
+      ? document.documentElement.classList.remove("dark")
+      : document.documentElement.classList.add("dark");
+  };
 
   // useEffect(() => {
   //   const handleResize = e => {
@@ -48,7 +53,7 @@ export default function Navbar() {
         <CiGrid41 className="w-8 h-8" onClick={handleOpenNavbar} />
       </div>
       <nav
-        className={`w-2/3 bg-background_main_l transition-transform duration-300 h-full fixed flex flex-col justify-between
+        className={`w-2/3 bg-background_main_l dark:bg-bg_dark_o transition-transform duration-300 h-full fixed flex flex-col justify-between
     top-0 left-0 pointer-events-none -translate-x-full text-fonts_main font-semibold max-w-[300px] min-w-[220px] z-50 px-3
     ${navShowing ? " transform-none pointer-events-auto " : ""
           } md:pointer-events-auto md:transform-none md:w-min md:min-w-0 custom-shadow  md:p-0`}
@@ -56,70 +61,66 @@ export default function Navbar() {
         <div className="">
           <Link href={"/"}>
             <a>
-              <div title='Home'
-                className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-          md:w-14"
-              >
-                <HiHome className={`${route === "/" ? "fill-buttons_main" : "fill-fonts_main"} w-8 h-8`} />
-                <span className="flex content-center text-lg md:hidden">Home</span>
-              </div>
+              <HiHome
+                className={`h-7 w-7 duration-300 ${
+                  route === "/"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
+                }`}
+              />
             </a>
           </Link>
           <Link href={"/search"}>
             <a>
-              <div title="Search"
-                className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-          md:w-14"
-              >
-                <HiSearch className={`${route === "/search" ? "fill-buttons_main" : "fill-fonts_main"} w-8 h-8`} />
-                <span className="flex content-center text-lg md:hidden">Search</span>
-              </div>
+              <HiSearch
+                className={`h-7 w-7 duration-300 ${
+                  route === "/search"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
+                }`}
+              />
             </a>
           </Link>
           <Link href={"/cart"}>
             <a>
-
-              <div title="Cart"
-                className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-             md:w-14"
-              >
-                <HiShoppingCart className={`${route === "/cart" ? "fill-buttons_main" : "fill-fonts_main"} w-8 h-8`} />
-                <span className="flex content-center text-lg md:hidden">Cart</span>
-              </div>
+              <HiHeart
+                className={`h-7 w-7 duration-300 ${
+                  route === "/favs"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
+                }`}
+              />
             </a>
           </Link>
           <Link href={"/favs"}>
             <a>
-
-              <div title="Favorites"
-                className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-             md:w-14"
-              >
-                <HiHeart className={`${route === "/favs" ? "fill-buttons_main" : "fill-fonts_main"} w-8 h-8`} />
-                <span className="flex content-center text-lg md:hidden">Favorites</span>
-              </div>
+              <HiShoppingCart
+                className={`h-7 w-7 duration-300 ${
+                  route === "/cart"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
+                }`}
+              />
             </a>
           </Link>
         </div>
         <div className="w-full">
           <Link href={"/about_us"}>
             <a>
-              <div title="About Us"
-                className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-             md:w-14"
-              >
-                <HiUserGroup className={`${route === "/about_us" ? "fill-buttons_main" : "fill-fonts_main"} w-8 h-8`} />
-                <span className="flex content-center text-lg md:hidden">About Us</span>
-              </div>
+              <HiUserGroup
+                className={`h-7 w-7 duration-300 ${
+                  route === "/about_us"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
+                }`}
+              />
             </a>
           </Link>
-          <div title="Dark Mode"
-            className="h-14 grid grid-cols-[15%,85%] md:flex items-center justify-center place-content-center cursor-pointer transition-colors
-          md:w-14"
-          >
-            <HiMoon className="w-8 h-8" />
-            <span className="flex content-center text-lg md:hidden">Dark Mode</span>
-          </div>
+          <button onClick={handleChangeTheme}>
+            <HiMoon
+              className={`h-7 w-7 duration-300 dark:fill-background_main`}
+            />
+          </button>
         </div>
       </nav>
       <section
