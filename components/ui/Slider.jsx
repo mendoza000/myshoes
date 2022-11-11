@@ -61,7 +61,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[400px] mx-auto ">
+    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[900px] mx-auto md:w-11/12">
       <button
         className="grid place-content-center absolute z-20 hover:bg-gradient-to-r hover:from-[rgba(25,25,25,0.1)]
         hover:to-transparent h-full w-20 top-0 left-0"

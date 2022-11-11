@@ -63,7 +63,7 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
       )}
       <div
         onClick={handleOpenProduct}
-        className={`relative pb-5 bg-background_main_l rounded-xl min-h-max custom-shadow children-overflow ${isInSlider && 'flex justify-center items-center pb-0'}`}
+        className={`relative pb-5 bg-background_main_l rounded-xl min-h-max custom-shadow children-overflow dark:bg-bg_dark_o ${isInSlider && 'flex justify-center items-center pb-0'}`}
       >
         <Image
           src={secondaryPhotos[0].src}
@@ -71,20 +71,22 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
           height={!isInSlider ? 200 : 180}
           alt={name}
           className={`-translate-y-5 transition-transform duration-700 ${
-            isInViewPort && "-rotate-6 scale-110"
+            isInViewPort && "-rotate-6"
           }`}
         />
         {!isInSlider && (
-          <div className="flex items-center justify-around min-w-full -mt-14">
-            <span className="text-fonts_secondary">${price}</span>
-            <span className="p-1 bg-buttons_main bg-opacity-30 rounded-xl">
+          <div className="flex items-center justify-around min-w-full -mt-14 dark:text-background_main_l">
+            <span className="text-fonts_secondary dark:text-background_main_l">
+              ${price}
+            </span>
+            <span className="p-1 bg-buttons_main bg-opacity-30 rounded-xl dark:bg-opacity-80">
               In stock
             </span>
           </div>
         )}
       </div>
       {!isInSlider && (
-        <h4 className="min-h-[3rem] text-left min-w-full text-md mt-2">
+        <h4 className="min-h-[3rem] text-left min-w-full text-md mt-2 dark:text-background_main_l">
           {name}
         </h4>
       )}

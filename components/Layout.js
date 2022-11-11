@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   }, [dispatch]);
 
   return (
-    <div className="bg-background_main">
+    <div className="bg-background_main dark:bg-bg_dark">
       <Navbar />
       <main>{children}</main>
       <BottomNavbar />
