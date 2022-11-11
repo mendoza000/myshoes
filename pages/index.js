@@ -23,7 +23,7 @@ export default function Home() {
         className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
       bg-background_main_l dark:bg-bg_dark ${
         imagesLoaded &&
-        " animate-splashBounce pointer-events-none translate-y-full "
+        "md:hidden animate-splashBounce pointer-events-none translate-y-full "
       }`}
       >
         <div className="waveform">
@@ -60,7 +60,8 @@ export default function Home() {
               Comming
             </h3>
           </div>
-          <div className="grid items-center justify-center w-full h-full grid-cols-2 px-5 py-2 mb-10 overflow-hidden gap-x-6 md:gap-x-0 md:max-w-[93%] md:ml-14 md:grid-cols-3 md:gap-y-5 md:mb-0 lg:grid-cols-3 lg:max-w-[70rem] lg:mx-auto">
+          <div className="grid items-center justify-center w-full h-full grid-cols-2 px-5 py-2 mb-10 overflow-hidden gap-x-6 md:gap-x-0
+           md:max-w-[93%] md:ml-14 md:grid-cols-3 md:gap-y-5 md:mb-0 lg:grid-cols-[repeat(auto-fit,250px)] lg:max-w-[70rem] lg:mx-auto">
             {data.map((shoe) => {
               return <Card2 key={shoe.id} {...shoe} />;
             })}

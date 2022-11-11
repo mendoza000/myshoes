@@ -65,12 +65,12 @@ export default function Search() {
   }, [filters]); //eslint-disable-line
 
   return (
-    <section className="flex flex-col w-screen h-screen mb-12 overflow-x-hidden">
-      <div className="flex items-end justify-center w-full shadow-md h-28">
+    <section className="flex flex-col w-screen mb-12 overflow-x-hidden md:w-[calc(100vw-50px)] md:ml-auto">
+      <div className="flex items-end justify-center w-full shadow-md pt-12">
         <div className="relative w-4/5 mb-4 ">
           <input
             onChange={handleChange}
-            className="w-full p-2 transition-colors border border-solid rounded-md h-max border-light_gray focus-visible:outline-none "
+            className="w-full p-2 md:p-3 transition-colors border border-solid rounded-md h-max border-light_gray focus-visible:outline-none "
             placeholder="Search..."
             spellCheck={false}
           />
@@ -82,7 +82,7 @@ export default function Search() {
             <BiSliderAlt className="w-3/4 h-3/4 text-background_main_l" />
           </button>
           {filtersOpen && (
-            <div className="absolute z-20 flex flex-col w-3/4 px-4 shadow-lg right-3 bg-background_main_l rounded-2xl">
+            <div className="absolute z-20 flex max-w-[350px] flex-col w-3/4 px-4 shadow-lg right-3 bg-background_main_l rounded-2xl">
               <fieldset className="flex justify-around mt-4">
                 <div className="basis-[calc(90%/3)]">
                   <input
@@ -96,7 +96,7 @@ export default function Search() {
                     }}
                   />
                   <label
-                    className="ml-1 h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
+                    className="ml-1 cursor-pointer h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
                     htmlFor="all"
                   >
                     All
@@ -114,7 +114,7 @@ export default function Search() {
                     }}
                   />
                   <label
-                    className="ml-1 h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
+                    className="ml-1 cursor-pointer h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
                     htmlFor="woman"
                   >
                     Woman
@@ -132,7 +132,7 @@ export default function Search() {
                     }}
                   />
                   <label
-                    className="ml-1 h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
+                    className="ml-1 cursor-pointer h-full p-1 rounded-xl text-black w-11/12 text-center block transition-[color,box-shadow,transform] duration-300"
                     htmlFor="man"
                   >
                     Man
@@ -158,7 +158,7 @@ export default function Search() {
           )}
         </div>
       </div>
-      <div className="w-11/12 mx-auto h-[81%]">
+      <div className="w-11/12 mx-auto grid grid-cols-[repeat(auto-fit,380px)] place-content-center overflow-hidden ">
         {filteredShoes.map((shoe) => {
           return <LongCard key={shoe.id} {...shoe} />;
         })}

@@ -223,7 +223,10 @@ export default function Product() {
                                         PARTE DE LA DESCRIPCIÓN Y PRECIO
         -----------------------------------------------------------------------------------------------------
         */}
-          <div className="flex flex-col w-full mt-12">
+          <div className="flex flex-col w-full mt-6">
+            <div className="w-full hidden md:flex text-xl justify-center mb-6">
+              <span>{product?.name}</span>
+            </div>
             <div className="flex justify-between w-full mb-3">
               <div className="md:hidden">
                 <h3 className="inline ml-4 text-3xl font-bold text-fonts_main dark:text-background_main_l">
