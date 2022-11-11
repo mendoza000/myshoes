@@ -12,7 +12,7 @@ const Header = () => {
     setRandomPick(Math.floor(Math.random() * shoes.length))
   }, [])
   return (
-    <div className="container hidden min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow md:grid">
+    <div className="container hidden min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow md:grid dark:text-background_main_l">
       {/* top bar */}
       <div className="flex items-center justify-between">
         <Image
@@ -44,9 +44,10 @@ const Header = () => {
             officia.
           </p>
 
-          <a className="max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl 
-          text-background_main hover:scale-105 grid place-content-center"
-          href='#shop' >
+          <a
+            className="grid max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl text-background_main hover:scale-105 place-content-center"
+            href="#shop"
+          >
             Go to products
           </a>
         </div>
