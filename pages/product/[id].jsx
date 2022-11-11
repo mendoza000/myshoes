@@ -33,7 +33,7 @@ export default function Product() {
   if (product === null || product === undefined) return null;
 
   return (
-    <div className="flex justify-center w-screen h-screen overflow-hidden bg-background_main_l dark:bg-bg_dark dark:bg-bg_dark">
+    <div className="flex justify-center w-screen h-screen overflow-hidden bg-background_main_l dark:bg-bg_dark">
       <div
         className="flex flex-col w-full h-full md:w-11/12 animate__animated animate__fadeInUp animate__faster
     md:flex-row max-w-[1000px] lg:gap-x-20 md:ml"
