@@ -20,7 +20,7 @@ export const cartReducer = (state = initialState, action) => {
 
     case types.CART_REMOVE:
       let y = state.filter((e) => e.id !== action.payload.id);
-      return x;
+      return y;
 
     case types.CART_CLEAR:
       return [];

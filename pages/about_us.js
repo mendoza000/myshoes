@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { HiLanguage } from "react-icons/hi2";
 import { BsGithub, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { SiReact, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import data from "./api/about.json"
 import Image from 'next/image';
 
@@ -25,6 +27,20 @@ export default function About_us() {
     <div className='mt-6 w-11/12 text-center text-fonts_secondary'>
       <h3 className='max-w-screen-sm mx-auto'>{data[language].description}</h3>
     </div>
+    <div className='w-1/2 mx-auto flex flex-wrap gap-4 justify-center mt-4'>
+      <div className='rounded-md flex items-center gap-2 px-4 py-2 bg-[#61DBFB]'>
+        <SiReact className='h-7 w-7' />
+        <span className='text-cl'>React</span>
+      </div>
+      <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(20,20,20)]'>
+        <TbBrandNextjs className='h-7 w-7' />
+        <span className='text-cl'>NextJs</span>
+      </div>
+      <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(55,154,177)]'>
+        <SiTailwindcss className='h-7 w-7' />
+        <span className='text-cl'>TailwindCSS</span>
+      </div>
+    </div>
     <div className='w-full mt-6 '>
       <a href='https://github.com/mendoza000/myshoes' target='_blank' rel='noreferrer' className='w-max bg-black text-[rgb(255,255,255)] rounded-md p-3 mx-auto flex'>
         <BsGithub className='fill-[#FFF] h-6 w-6 my-auto mr-2' />
@@ -34,7 +50,7 @@ export default function About_us() {
       </a>
     </div>
     <div className='w-full flex justify-center items-center mt-6 text-lg'>
-      <div className='flex justify-center gap-6 items-center relative'>
+      <div className='flex justify-center gap-6 items-center relative text-2xl'>
         <button className={``}
           onClick={() => setCurrentPerson('omar')} >Omar</button>
         <button className={``}
@@ -64,15 +80,15 @@ export default function About_us() {
         </div>
         <p className='text-md w-11/12 max-w-[550px] mx-auto mt-4 text-fonts_main'>{data.ourData.omar.description[language]}</p>
         <div className='flex w-full justify-center mt-5 gap-3 mb-16'>
-          <div className='py-2 px-4 border-[2px] border-buttons_main rounded-xl '>
+          <a href='https://twitter.com/mendoza000x' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-buttons_main rounded-xl '>
             <BsTwitter className='h-8 w-8 fill-buttons_main ' />
-          </div>
-          <div className='py-2 px-4 border-[2px] border-[black] rounded-xl '>
+          </a>
+          <a href='https://github.com/mendoza000' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-[black] rounded-xl '>
             <BsGithub className='h-8 w-8 fill-[black] ' />
-          </div>
-          <div className='py-2 px-4 border-[2px] border-[green] rounded-xl '>
+          </a>
+          <a href='https://wa.me/+584164793843' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-[green] rounded-xl '>
             <BsWhatsapp className='h-8 w-8 fill-[green] ' />
-          </div>
+          </a>
         </div>
       </div>
       <div className={`w-full flex flex-col transition-all absolute left-0 translate-x-0 ${currentPerson === 'omar' && 'left-full'}`}>
