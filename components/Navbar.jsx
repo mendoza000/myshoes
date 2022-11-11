@@ -25,6 +25,11 @@ export default function Navbar() {
   const handleBack = () => {
     router.back();
   };
+  const handleChangeTheme = () => {
+    document.documentElement.classList.contains("dark")
+      ? document.documentElement.classList.remove("dark")
+      : document.documentElement.classList.add("dark");
+  };
 
   // useEffect(() => {
   //   const handleResize = e => {
@@ -49,7 +54,7 @@ export default function Navbar() {
         <CiGrid41 className="w-8 h-8" onClick={handleOpenNavbar} />
       </div>
       <nav
-        className={`w-2/3 bg-background_main_l transition-transform duration-300 h-full fixed flex flex-col justify-between
+        className={`w-2/3 bg-background_main_l dark:bg-bg_dark_o transition-transform duration-300 h-full fixed flex flex-col justify-between
     top-0 left-0 pointer-events-none -translate-x-full text-fonts_main font-semibold max-w-[300px] min-w-[220px] z-50 px-3
     ${
       navShowing ? " transform-none pointer-events-auto " : ""
@@ -60,7 +65,9 @@ export default function Navbar() {
             <a>
               <HiHome
                 className={`h-7 w-7 duration-300 ${
-                  route === "/" ? "fill-buttons_main" : "fill-fonts_main"
+                  route === "/"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
                 }`}
               />
             </a>
@@ -69,7 +76,9 @@ export default function Navbar() {
             <a>
               <HiSearch
                 className={`h-7 w-7 duration-300 ${
-                  route === "/search" ? "fill-buttons_main" : "fill-fonts_main"
+                  route === "/search"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
                 }`}
               />
             </a>
@@ -78,7 +87,9 @@ export default function Navbar() {
             <a>
               <HiHeart
                 className={`h-7 w-7 duration-300 ${
-                  route === "/favs" ? "fill-buttons_main" : "fill-fonts_main"
+                  route === "/favs"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
                 }`}
               />
             </a>
@@ -87,7 +98,9 @@ export default function Navbar() {
             <a>
               <HiShoppingCart
                 className={`h-7 w-7 duration-300 ${
-                  route === "/cart" ? "fill-buttons_main" : "fill-fonts_main"
+                  route === "/cart"
+                    ? "fill-buttons_main"
+                    : "fill-fonts_main dark:fill-background_main"
                 }`}
               />
             </a>
@@ -100,13 +113,15 @@ export default function Navbar() {
                 className={`h-7 w-7 duration-300 ${
                   route === "/about_us"
                     ? "fill-buttons_main"
-                    : "fill-fonts_main"
+                    : "fill-fonts_main dark:fill-background_main"
                 }`}
               />
             </a>
           </Link>
-          <button>
-            <HiMoon className={`h-7 w-7 duration-300`} />
+          <button onClick={handleChangeTheme}>
+            <HiMoon
+              className={`h-7 w-7 duration-300 dark:fill-background_main`}
+            />
           </button>
         </div>
       </nav>

@@ -18,9 +18,9 @@ const Cart = () => {
   }, [cart]);
 
   return (
-    <div className="container min-h-screen pb-20 bg-background_main animate__animated animate__fadeIn animate__faster lg:max-w-4xl md:mx-auto md:max-w-xl">
+    <div className="container min-h-screen pb-20 bg-background_main animate__animated animate__fadeIn animate__faster lg:max-w-4xl md:mx-auto md:max-w-xl dark:bg-bg_dark">
       <div className="flex items-center justify-center px-6 py-4">
-        <h1 className="text-3xl font-bold text-center md:mt-5 fill-fonts_main ">
+        <h1 className="text-3xl font-bold text-center md:mt-5 fill-fonts_main dark:text-background_main_l">
           Cart
         </h1>
       </div>
@@ -28,11 +28,8 @@ const Cart = () => {
       {cart?.length < 1 && <AlertInfo message={"This cart is empty!"} />}
 
       {cart?.length >= 1 && (
-        <div className="flex items-center justify-between p-3 mx-5 mb-5 border-2 border-opacity-50 shadow-md border-buttons_main bg-background_main_l rounded-xl md:mb-10">
-          <span>
-            Items:
-            {cart ? cart.length : " 0"}
-          </span>
+        <div className="flex items-center justify-between p-3 mx-5 mb-5 border-2 border-opacity-50 shadow-md border-buttons_main bg-background_main_l rounded-xl md:mb-10 dark:bg-bg_dark_o dark:border-transparent dark:text-background_main_l">
+          <span>Items: {cart ? cart.length : " 0"}</span>
 
           <span>Total: ${totalPrice.toFixed(2)}</span>
         </div>

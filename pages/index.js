@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <div
         className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
-      bg-background_main_l ${
+      bg-background_main_l dark:bg-bg_dark ${
         imagesLoaded &&
         " animate-splashBounce pointer-events-none translate-y-full "
       }`}
@@ -33,12 +33,12 @@ export default function Home() {
           <div className="waveform__bar"></div>
         </div>
       </div>
-      <div className="container min-w-full min-h-screen scroll-smooth bg-background_main animate__animated animate__fadeIn animate__faster">
+      <div className="container min-w-full min-h-screen scroll-smooth bg-background_main dark:bg-bg_dark animate__animated animate__fadeIn animate__faster">
         {/* header only md & lg */}
         <Header />
 
         <div className="flex items-center justify-center px-6 py-4 md:hidden">
-          <h1 className="text-3xl font-bold text-center fill-fonts_main ">
+          <h1 className="text-3xl font-bold text-center fill-fonts_main dark:text-background_main_l">
             myShoes
           </h1>
         </div>
@@ -48,15 +48,15 @@ export default function Home() {
           <Slider />
           <div
             id="shop"
-            className="flex items-center gap-6 ml-5 md:max-w-[70rem] md:mx-auto"
+            className="flex items-center gap-6 ml-5 md:max-w-[70rem] md:mx-auto dark:text-background_main_l"
           >
             <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center border-b-2 border-b-buttons_main">
               News
             </h3>
-            <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center text-fonts_secondary">
+            <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center text-fonts_secondary dark:text-background_main_l dark:text-opacity-60">
               Most sold
             </h3>
-            <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center text-fonts_secondary">
+            <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center text-fonts_secondary dark:text-background_main_l dark:text-opacity-60">
               Comming
             </h3>
           </div>
