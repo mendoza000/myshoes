@@ -73,10 +73,9 @@ const Slider = () => {
         return (
           <div
             key={shoe.id}
-            className={`w-[200px] transition-all duration-300 absolute ${
-              shoe.isActualLeft
-              ? "left-0 -translate-x-0 "
-              : ""
+            className={`w-[200px] transition-all duration-300 absolute ${shoe.isActualLeft
+                ? "left-0 -translate-x-0 "
+                : ""
               }
           ${shoe.isActualRight
                 ? "left-full -translate-x-full"

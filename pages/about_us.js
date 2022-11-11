@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { HiLanguage } from "react-icons/hi2";
 import { BsGithub, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
-import data from "./api/about.json";
-import Image from "next/image";
-import Person from "@components/about/Person";
+import { SiReact, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import data from "./api/about.json"
+import Image from 'next/image';
 
 export default function About_us() {
   const [language, setLanguage] = useState("en");
