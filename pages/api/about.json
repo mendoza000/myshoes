@@ -1,7 +1,7 @@
 {
   "en": {
     "title": "About Us",
-    "description": "We are Omar and Yonathan, two young guys from Latin America who created this page together using github to demostrate our habilities.",
+    "description": "We are Omar and Yonathan, two young guys from latin america who created this page togheter using github to demostrate our habilities. To create this page we used the following technologies:",
     "gitbutton": "This proyect Github"
   },
   "es": {
@@ -32,8 +32,8 @@
         "en": "Hello! 👋, I'm a young man from Argentina who loves developing web aplications 🔗."
       },
       "funfact": {
-        "es": "Funfact: Jugamos piedra papel o tijeras para ver quien aparecía primero por defecto en esta página y perdí 😔.",
-        "en": "Funfact: We played rock paper scissors to determine who was first by default in this page and i lost 😔."
+        "es": "Jugamos piedra papel o tijeras para ver quien aparecía primero por defecto en esta página y perdí 😔.",
+        "en": "We played rock paper scissors to determine who was first by default in this page and i lost 😔."
       },
       "name": "Yonathan Picone",
       "photo": "/profile_yon.jpg"

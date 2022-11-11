@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  scroll-behavior: smooth!important;
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
 @layer base {
@@ -25,9 +26,9 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
 }
 .custom-shadow-bottom-right {
-  box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
-  -moz-box-shadow: 6px 6px 6px -4px rgba(0,0,0,0.2);
+  box-shadow: 6px 6px 6px -4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 6px 6px 6px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 6px 6px 6px -4px rgba(0, 0, 0, 0.2);
 }
 
 .waveform {
@@ -108,9 +109,5 @@ html, body {
 }
 
 .custom-border {
-  /* border-radius: 58% 42% 36% 64% / 54% 48% 52% 46%;
-  animation-name: changeBorder;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate-reverse;
-  animation-duration: 5s; */
+  background-color: #1f2133;
 }

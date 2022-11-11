@@ -1,10 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useState } from "react";
+
+const shoes = ['Nike Air Zoom SuperRep 3 w', 'nike-air-vapormax-plus', 'Nike Metcon 8 w']
 
 const Header = () => {
+  const [randomPick, setRandomPick] = useState(0)
+  useEffect(() => {
+    setRandomPick(Math.floor(Math.random() * shoes.length))
+  }, [])
   return (
-    <div className="container min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow">
+    <div className="container hidden min-w-full min-h-screen py-5 pl-20 pr-5 mb-10 custom-shadow md:grid dark:text-background_main_l">
       {/* top bar */}
       <div className="flex items-center justify-between">
         <Image
@@ -36,9 +44,10 @@ const Header = () => {
             officia.
           </p>
 
-          <a className="max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl 
-          text-background_main hover:scale-105 grid place-content-center"
-          href='#shop' >
+          <a
+            className="grid max-w-sm py-5 text-xl duration-300 bg-gradient-to-r from-buttons_main to-details custom-shadow rounded-xl text-background_main hover:scale-105 place-content-center"
+            href="#shop"
+          >
             Go to products
           </a>
         </div>
@@ -50,7 +59,7 @@ const Header = () => {
               alt="header-img"
               width={400}
               height={400}
-              src={"/Nike Air Zoom SuperRep 3 w/main.png"}
+              src={`/${shoes[randomPick]}/main.png`}
               className={"-rotate-[20deg]"}
             />
           </div>
