@@ -80,15 +80,15 @@ export default function About_us() {
         </div>
         <p className='text-md w-11/12 max-w-[550px] mx-auto mt-4 text-fonts_main'>{data.ourData.omar.description[language]}</p>
         <div className='flex w-full justify-center mt-5 gap-3 mb-16'>
-          <div className='py-2 px-4 border-[2px] border-buttons_main rounded-xl '>
+          <a href='https://twitter.com/mendoza000x' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-buttons_main rounded-xl '>
             <BsTwitter className='h-8 w-8 fill-buttons_main ' />
-          </div>
-          <div className='py-2 px-4 border-[2px] border-[black] rounded-xl '>
+          </a>
+          <a href='https://github.com/mendoza000' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-[black] rounded-xl '>
             <BsGithub className='h-8 w-8 fill-[black] ' />
-          </div>
-          <div className='py-2 px-4 border-[2px] border-[green] rounded-xl '>
+          </a>
+          <a href='https://wa.me/+584164793843' target='_blank' rel='noreferrer' className='py-2 px-4 border-[2px] border-[green] rounded-xl '>
             <BsWhatsapp className='h-8 w-8 fill-[green] ' />
-          </div>
+          </a>
         </div>
       </div>
       <div className={`w-full flex flex-col transition-all absolute left-0 translate-x-0 ${currentPerson === 'omar' && 'left-full'}`}>

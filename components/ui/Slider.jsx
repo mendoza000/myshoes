@@ -9,37 +9,32 @@ const Slider = () => {
   const [shoes, setShoes] = useState([]);
 
   useEffect(() => {
-    const actualShoe = data.at(index);
-    const prevPrevShoe = data.at(index - 2);
+    const actualLeftShoe = data.at(index);
+    const actualRightShoe = data.at(index + 1);
     const prevShoe = data.at(index - 1);
-    const nextShoe = data.at(index + 1);
-    const nextNextShoe = data.at(index + 2);
+    const nextShoe = data.at(index + 2);
     setShoes([
-      { ...prevPrevShoe, isPrevPrev: true },
       { ...prevShoe, isPrev: true },
-      { ...actualShoe, isActual: true },
+      { ...actualLeftShoe, isActualLeft: true },
+      { ...actualRightShoe, isActualRight: true },
       { ...nextShoe, isNext: true },
-      { ...nextNextShoe, isNextNext: true },
     ]);
   }, [index]);
 
   const handlePrevIndex = () => {
     const newArray = Array.from(shoes).map((shoe) => {
-      if (shoe.isPrevPrev) {
-        shoe.isPrevPrev = false;
-        shoe.isPrev = true;
-      } else if (shoe.isPrev) {
+      if (shoe.isPrev) {
         shoe.isPrev = false;
-        shoe.isActual = true;
-      } else if (shoe.isActual) {
-        shoe.isActual = false;
+        shoe.isActualLeft = true;
+      } else if (shoe.isActualLeft) {
+        shoe.isActualLeft = false;
+        shoe.isActualRight = true;
+      } else if (shoe.isActualRight) {
+        shoe.isActualRight = false;
         shoe.isNext = true;
       } else if (shoe.isNext) {
         shoe.isNext = false;
-        shoe.isNextNext = true;
-      } else if (shoe.isNextNext) {
-        shoe.isNextNext = false;
-        shoe.isPrevPrev = true;
+        shoe.isPrev = true;
       }
       return shoe;
     });
@@ -47,21 +42,18 @@ const Slider = () => {
   };
   const handleNextIndex = () => {
     const newArray = Array.from(shoes).map((shoe) => {
-      if (shoe.isPrevPrev) {
-        shoe.isPrevPrev = false;
-        shoe.isNextNext = true;
-      } else if (shoe.isPrev) {
+      if (shoe.isPrev) {
         shoe.isPrev = false;
-        shoe.isPrevPrev = true;
-      } else if (shoe.isActual) {
-        shoe.isActual = false;
+        shoe.isNext = true;
+      } else if (shoe.isActualLeft) {
+        shoe.isActualLeft = false;
         shoe.isPrev = true;
+      } else if (shoe.isActualRight) {
+        shoe.isActualRight = false;
+        shoe.isActualLeft = true;
       } else if (shoe.isNext) {
         shoe.isNext = false;
-        shoe.isActual = true;
-      } else if (shoe.isNextNext) {
-        shoe.isNextNext = false;
-        shoe.isNext = true;
+        shoe.isActualRight = true;
       }
       return shoe;
     });
@@ -69,7 +61,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[450px] md:max-w-[900px] mx-auto md:w-11/12 ">
+    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[400px] mx-auto ">
       <button
         className="grid place-content-center absolute z-20 hover:bg-gradient-to-r hover:from-[rgba(25,25,25,0.1)]
         hover:to-transparent h-full w-20 top-0 left-0"
@@ -81,24 +73,21 @@ const Slider = () => {
         return (
           <div
             key={shoe.id}
-            className={`transition-all duration-200 absolute ${
-              shoe.isActual
-                ? "scale-105 z-20 left-1/2 -translate-x-1/2 "
-                : "scale-50 pointer-events-none "
-            }
-          ${
-            shoe.isPrev
-              ? "-left-6 md:left-28 md:scale-75 md:z-10 lg:scale-105 lg:left-32 lg:pointer-events-auto "
+            className={`w-[200px] transition-all duration-300 absolute ${
+              shoe.isActualLeft
+              ? "left-0 -translate-x-0 "
               : ""
-          }
-          ${
-            shoe.isNext
-              ? "-right-6 md:right-28 md:scale-75 lg:scale-105 lg:right-32 md:z-10 lg:pointer-events-auto"
-              : ""
-          }
-          ${shoe.isPrevPrev ? "hidden md:block md:left-0" : ""} ${
-              shoe.isNextNext ? "hidden md:block md:right-0" : ""
-            }`}
+              }
+          ${shoe.isActualRight
+                ? "left-full -translate-x-full"
+                : ""
+              }
+          ${shoe.isNext
+                ? "left-full translate-x-0 -z-10 opacity-10"
+                : ""
+              }
+          ${shoe.isPrev ? "left-0 -translate-x-full -z-10 opacity-10"
+                : ""} `}
           >
             <Card2 {...shoe} isInSlider={true} />
           </div>

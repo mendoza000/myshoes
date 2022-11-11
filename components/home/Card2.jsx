@@ -44,7 +44,7 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
   return (
     <div
       ref={fromRef}
-      className="relative flex flex-col items-center justify-center min-w-[10rem] max-w-[12rem] mx-auto cursor-pointer"
+      className={`relative flex flex-col items-center justify-center min-w-[10rem] max-w-[12rem] mx-auto cursor-pointer`}
     >
       {!isInSlider && (
         <button
@@ -63,12 +63,12 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
       )}
       <div
         onClick={handleOpenProduct}
-        className="relative pb-5 bg-background_main_l rounded-xl min-h-max custom-shadow children-overflow"
+        className={`relative pb-5 bg-background_main_l rounded-xl min-h-max custom-shadow children-overflow ${isInSlider && 'flex justify-center items-center pb-0'}`}
       >
         <Image
           src={secondaryPhotos[0].src}
-          width={200}
-          height={200}
+          width={!isInSlider ? 200 : 180}
+          height={!isInSlider ? 200 : 180}
           alt={name}
           className={`-translate-y-5 transition-transform duration-700 ${
             isInViewPort && "-rotate-6 scale-110"
