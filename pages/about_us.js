@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { HiLanguage } from "react-icons/hi2";
-import { BsGithub, BsTwitter, BsWhatsapp, BsInstagram } from "react-icons/bs";
-import { SiReact, SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { BsGithub } from "react-icons/bs";
 import data from "./api/about.json"
-import Image from 'next/image';
+import Person from "@components/about/Person";
 
 export default function About_us() {
   const [language, setLanguage] = useState("en");
@@ -31,10 +29,7 @@ export default function About_us() {
         <h3 className="max-w-screen-sm mx-auto">
           {data[language].description}
         </h3>
-        <span className="text-sm max-w-md block text-[rgb(130,130,130)] mt-4 mx-auto dark:text-background_main_l dark:opacity-50">
-          <span className="text-details dark:text-buttons_main">Funfact: </span>
-          {data.ourData.yon.funfact[language]}
-        </span>
+      
       </div>
       <div className="w-full mt-6 ">
         <a
@@ -77,6 +72,7 @@ export default function About_us() {
           language={language}
           currentPerson={currentPerson}
           person={"yon"}
+          funfact={data.ourData.yon.funfact[language]}
         />
       </div>
     </div>
