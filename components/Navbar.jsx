@@ -60,7 +60,7 @@ export default function Navbar() {
       >
         <div className="">
           <Link href={"/"}>
-            <a className="flex w-full" title='Home'>
+            <a className="flex w-full mt-4 md:mt-0" title='Home'>
               <HiHome
                 className={`h-8 w-8 mb-2 duration-300 ${route === "/"
                     ? "fill-buttons_main"
@@ -118,7 +118,7 @@ export default function Navbar() {
           </Link>
           <button onClick={handleChangeTheme} className='flex w-full' title='Toggle Theme'>
             <HiMoon
-              className={`h-8 w-8 mb-1 duration-300 dark:fill-background_main`}
+              className={`h-8 w-8 mb-4 md:mb-1 duration-300 dark:fill-background_main`}
             />
             <span className="content-center text-lg md:hidden dark:text-background_main_l ml-6  ">Toggle Theme</span>
           </button>

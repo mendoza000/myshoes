@@ -48,7 +48,7 @@ export default function Home() {
           <Slider />
           <div
             id="shop"
-            className="flex items-center gap-6 ml-5 md:max-w-[70rem] md:mx-auto dark:text-background_main_l"
+            className="flex items-center gap-6 md:max-w-[70rem] mx-auto dark:text-background_main_l"
           >
             <h3 className="flex items-center py-1 pr-4 text-xl font-semibold text-center border-b-2 border-b-buttons_main">
               News

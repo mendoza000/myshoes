@@ -65,7 +65,7 @@ export default function Search() {
   }, [filters]); //eslint-disable-line
 
   return (
-    <section className="flex flex-col w-screen mb-12 overflow-x-hidden md:w-[calc(100vw-50px)] md:ml-auto">
+    <section className="flex flex-col w-full pb-20 overflow-x-hidden md:w-[calc(100vw-50px)] md:ml-auto">
       <div className="flex items-end justify-center w-full shadow-md pt-12">
         <div className="relative w-4/5 mb-4 ">
           <input

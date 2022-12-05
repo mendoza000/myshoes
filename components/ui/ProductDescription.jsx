@@ -28,7 +28,7 @@ export default function ProductDescription({ product, setIsBuying, amount, setAm
   return <section className="flex flex-col h-[37vh] md:min-h-[75%] my-auto lg:mr-10 custom-shadow lg:p-10 lg:pt-5 rounded-xl md:max-w-sm md:p-5 md:pt-0 lg:max-w-md dark:bg-bg_dark_o">
     <div className="flex flex-col w-full mt-6">
       <div className="w-full hidden md:flex text-xl justify-center mb-6">
-        <span>{product?.name}</span>
+        <span className='dark:text-background_main_l'>{product?.name}</span>
       </div>
       <div className="flex justify-between w-full mb-3">
         <div className="md:hidden">
@@ -40,7 +40,7 @@ export default function ProductDescription({ product, setIsBuying, amount, setAm
           </span>
         </div>
         <div className="hidden md:block">
-          <h3 className="inline ml-4 text-3xl font-bold text-fonts_main">
+          <h3 className="inline ml-4 text-3xl font-bold text-fonts_main dark:text-background_main_l">
             ${(product.price * amount).toString().split(".")[0]}
           </h3>
           <span className="inline text-lg text-fonts_main dark:text-background_main_l">
@@ -54,7 +54,7 @@ export default function ProductDescription({ product, setIsBuying, amount, setAm
         <div className="flex items-center mr-4">
           {product.rating.map((star, index) => {
             if (star)
-              return <HiStar key={index} className="fill-fonts_main" />;
+              return <HiStar key={index} className="fill-fonts_main dark:fill-background_main_l" />;
             return <HiOutlineStar key={index} />;
           })}
         </div>
