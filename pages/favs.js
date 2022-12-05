@@ -7,7 +7,7 @@ const Favs = () => {
   const favs = useSelector((state) => state.favs);
 
   return (
-    <div className="container min-h-screen bg-background_main animate__animated animate__fadeIn animate__faster md:min-w-[calc(100vw-50px)] md:ml-auto dark:bg-bg_dark">
+    <div className="container min-h-screen bg-background_main animate__animated animate__fadeIn animate__faster dark:bg-bg_dark md:min-w-[calc(100vw-50px)] md:ml-auto">
       <div className="flex items-center justify-center px-6 py-4">
         <h1 className="text-3xl font-bold text-center md:mt-5 fill-fonts_main dark:text-background_main_l">
           Favorites
