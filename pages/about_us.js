@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { HiLanguage } from "react-icons/hi2";
 import { BsGithub } from "react-icons/bs";
+import { TbBrandNextjs } from "react-icons/tb";
 import data from "./api/about.json"
 import Person from "@components/about/Person";
+import { SiReact, SiTailwindcss } from "react-icons/si";
 
 export default function About_us() {
   const [language, setLanguage] = useState("en");
@@ -29,7 +31,21 @@ export default function About_us() {
         <h3 className="max-w-screen-sm mx-auto">
           {data[language].description}
         </h3>
-      
+        <div className='w-1/2 mx-auto flex flex-wrap gap-4 justify-center mt-4'>
+          <div className='rounded-md flex text-fonts_secondary items-center gap-2 px-4 py-2 bg-[#61DBFB]'>
+            <SiReact className='h-7 w-7' />
+            <span className='text-cl'>React</span>
+          </div>
+          <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(20,20,20)]'>
+            <TbBrandNextjs className='h-7 w-7' />
+            <span className='text-cl'>NextJs</span>
+          </div>
+          <div className='rounded-md flex text-[white] items-center gap-2 px-4 py-2 bg-[rgb(55,154,177)]'>
+            <SiTailwindcss className='h-7 w-7' />
+            <span className='text-cl'>TailwindCSS</span>
+          </div>
+        </div>
+
       </div>
       <div className="w-full mt-6 ">
         <a
@@ -52,11 +68,10 @@ export default function About_us() {
           </button>
           <span
             className={`w-8 h-[3px] transition-all bg-buttons_main absolute bottom-0 
-        ${
-          currentPerson === "omar"
-            ? "left-0 translate-x-0"
-            : "left-[calc(100%-4rem)] w-16 translate-x-0"
-        }`}
+        ${currentPerson === "omar"
+                ? "left-0 translate-x-0"
+                : "left-[calc(100%-4rem)] w-16 translate-x-0"
+              }`}
           />
         </div>
       </div>

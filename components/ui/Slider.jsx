@@ -7,6 +7,7 @@ const Slider = () => {
   const [originalIndex, setOriginalIndex] = useState(14);
   const [index, setIndex] = useState(originalIndex);
   const [shoes, setShoes] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false)
 
   useEffect(() => {
     const actualLeftShoe = data.at(index);
@@ -39,6 +40,10 @@ const Slider = () => {
       return shoe;
     });
     setShoes(newArray);
+    setIsDisabled(true)
+    setTimeout(() => {
+      setIsDisabled(false)
+    }, 300)
   };
   const handleNextIndex = () => {
     const newArray = Array.from(shoes).map((shoe) => {
@@ -58,6 +63,10 @@ const Slider = () => {
       return shoe;
     });
     setShoes(newArray);
+    setIsDisabled(true)
+    setTimeout(() => {
+      setIsDisabled(false)
+    }, 300)
   };
 
   return (
@@ -66,6 +75,7 @@ const Slider = () => {
         className="grid place-content-center absolute z-20 hover:bg-gradient-to-r hover:from-[rgba(25,25,25,0.1)]
         hover:to-transparent h-full w-20 top-0 left-0"
         onClick={handlePrevIndex}
+        disabled={isDisabled}
       >
         <FaAngleLeft className="w-16 h-16 opacity-90 fill-fonts_main" />
       </button>
@@ -96,6 +106,7 @@ const Slider = () => {
         className="absolute top-0 right-0 z-20 grid w-20 h-full place-content-center hover:bg-gradient-to-r 
         hover:to-[rgba(25,25,25,0.1)] hover:from-transparent"
         onClick={handleNextIndex}
+        disabled={isDisabled}
       >
         <FaAngleRight className="w-16 h-16 opacity-90 fill-fonts_main" />
       </button>
