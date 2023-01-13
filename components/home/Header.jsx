@@ -59,7 +59,7 @@ const Header = () => {
               alt="header-img"
               width={400}
               height={400}
-              src={`/${shoes[randomPick]}/main.png`}
+              src={`/${shoes[randomPick]}/main.webp`}
               className={"-rotate-[20deg]"}
             />
           </div>
