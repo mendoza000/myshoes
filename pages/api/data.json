@@ -1,18 +1,18 @@
 [
   {
     "name": "Air Jordan 9 Retro",
-    "cardPhoto": "/Air Jordan 9 Retro/main-card.png",
+    "cardPhoto": "/Air Jordan 9 Retro/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Air Jordan 9 Retro/main.png",
+        "src": "/Air Jordan 9 Retro/main.webp",
         "id": 1
       },
       {
-        "src": "/Air Jordan 9 Retro/both.png",
+        "src": "/Air Jordan 9 Retro/both.webp",
         "id": 2
       },
       {
-        "src": "/Air Jordan 9 Retro/down.png",
+        "src": "/Air Jordan 9 Retro/down.webp",
         "id": 3
       }
     ],
@@ -26,18 +26,18 @@
   },
   {
     "name": "Jordan ADG 4",
-    "cardPhoto": "/Jordan ADG 4/main-card.png",
+    "cardPhoto": "/Jordan ADG 4/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Jordan ADG 4/main.png",
+        "src": "/Jordan ADG 4/main.webp",
         "id": 1
       },
       {
-        "src": "/Jordan ADG 4/both.png",
+        "src": "/Jordan ADG 4/both.webp",
         "id": 2
       },
       {
-        "src": "/Jordan ADG 4/down.png",
+        "src": "/Jordan ADG 4/down.webp",
         "id": 3
       }
     ],
@@ -51,18 +51,18 @@
   },
   {
     "name": "Air Max 90 Futura",
-    "cardPhoto": "/Nike Air Max 90 Futura w/main-card.png",
+    "cardPhoto": "/Nike Air Max 90 Futura w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Max 90 Futura w/main.png",
+        "src": "/Nike Air Max 90 Futura w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Max 90 Futura w/both.png",
+        "src": "/Nike Air Max 90 Futura w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Max 90 Futura w/down.png",
+        "src": "/Nike Air Max 90 Futura w/down.webp",
         "id": 3
       }
     ],
@@ -75,18 +75,18 @@
   },
   {
     "name": "Air Max Bella TR 5",
-    "cardPhoto": "/Nike Air Max Bella TR 5 w/main-card.png",
+    "cardPhoto": "/Nike Air Max Bella TR 5 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Max Bella TR 5 w/main.png",
+        "src": "/Nike Air Max Bella TR 5 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Max Bella TR 5 w/both.png",
+        "src": "/Nike Air Max Bella TR 5 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Max Bella TR 5 w/down.png",
+        "src": "/Nike Air Max Bella TR 5 w/down.webp",
         "id": 3
       }
     ],
@@ -99,18 +99,18 @@
   },
   {
     "name": "Air Winflo 9",
-    "cardPhoto": "/Nike Air Winflo 9 w/main-card.png",
+    "cardPhoto": "/Nike Air Winflo 9 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Winflo 9 w/main.png",
+        "src": "/Nike Air Winflo 9 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Winflo 9 w/both.png",
+        "src": "/Nike Air Winflo 9 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Winflo 9 w/down.png",
+        "src": "/Nike Air Winflo 9 w/down.webp",
         "id": 3
       }
     ],
@@ -123,18 +123,18 @@
   },
   {
     "name": "Air Zoom Pegasus 39",
-    "cardPhoto": "/Nike Air Zoom Pegasus 39 w/main-card.png",
+    "cardPhoto": "/Nike Air Zoom Pegasus 39 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Zoom Pegasus 39 w/main.png",
+        "src": "/Nike Air Zoom Pegasus 39 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Zoom Pegasus 39 w/both.png",
+        "src": "/Nike Air Zoom Pegasus 39 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Zoom Pegasus 39 w/down.png",
+        "src": "/Nike Air Zoom Pegasus 39 w/down.webp",
         "id": 3
       }
     ],
@@ -147,18 +147,18 @@
   },
   {
     "name": "Air Zoom Pegasus FlyEase",
-    "cardPhoto": "/Nike Air Zoom Pegasus FlyEase w/main-card.png",
+    "cardPhoto": "/Nike Air Zoom Pegasus FlyEase w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Zoom Pegasus FlyEase w/main.png",
+        "src": "/Nike Air Zoom Pegasus FlyEase w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Zoom Pegasus FlyEase w/both.png",
+        "src": "/Nike Air Zoom Pegasus FlyEase w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Zoom Pegasus FlyEase w/down.png",
+        "src": "/Nike Air Zoom Pegasus FlyEase w/down.webp",
         "id": 3
       }
     ],
@@ -171,18 +171,18 @@
   },
   {
     "name": "Air Zoom Structure 24",
-    "cardPhoto": "/Nike Air Zoom Structure 24 w/main-card.png",
+    "cardPhoto": "/Nike Air Zoom Structure 24 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Zoom Structure 24 w/main.png",
+        "src": "/Nike Air Zoom Structure 24 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Zoom Structure 24 w/both.png",
+        "src": "/Nike Air Zoom Structure 24 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Zoom Structure 24 w/down.png",
+        "src": "/Nike Air Zoom Structure 24 w/down.webp",
         "id": 3
       }
     ],
@@ -195,18 +195,18 @@
   },
   {
     "name": "Air Zoom SuperRep 3",
-    "cardPhoto": "/Nike Air Zoom SuperRep 3 w/main-card.png",
+    "cardPhoto": "/Nike Air Zoom SuperRep 3 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Zoom SuperRep 3 w/main.png",
+        "src": "/Nike Air Zoom SuperRep 3 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Zoom SuperRep 3 w/both.png",
+        "src": "/Nike Air Zoom SuperRep 3 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Zoom SuperRep 3 w/down.png",
+        "src": "/Nike Air Zoom SuperRep 3 w/down.webp",
         "id": 3
       }
     ],
@@ -219,18 +219,18 @@
   },
   {
     "name": "Free Run 5.0",
-    "cardPhoto": "/Nike Free Run 5.0 w/main-card.png",
+    "cardPhoto": "/Nike Free Run 5.0 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Free Run 5.0 w/main.png",
+        "src": "/Nike Free Run 5.0 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Free Run 5.0 w/both.png",
+        "src": "/Nike Free Run 5.0 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Free Run 5.0 w/down.png",
+        "src": "/Nike Free Run 5.0 w/down.webp",
         "id": 3
       }
     ],
@@ -243,18 +243,18 @@
   },
   {
     "name": "React Pegasus Trail 4 GORE-TEX",
-    "cardPhoto": "/Nike React Pegasus Trail 4 GORE-TEX w/main-card.png",
+    "cardPhoto": "/Nike React Pegasus Trail 4 GORE-TEX w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/main.png",
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.png",
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.png",
+        "src": "/Nike React Pegasus Trail 4 GORE-TEX w/down.webp",
         "id": 3
       }
     ],
@@ -267,18 +267,18 @@
   },
   {
     "name": "React Pegasus Trail 4",
-    "cardPhoto": "/Nike React Pegasus Trail 4 w/main-card.png",
+    "cardPhoto": "/Nike React Pegasus Trail 4 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike React Pegasus Trail 4 w/main.png",
+        "src": "/Nike React Pegasus Trail 4 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike React Pegasus Trail 4 w/both.png",
+        "src": "/Nike React Pegasus Trail 4 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike React Pegasus Trail 4 w/down.png",
+        "src": "/Nike React Pegasus Trail 4 w/down.webp",
         "id": 3
       }
     ],
@@ -291,18 +291,18 @@
   },
   {
     "name": "Metcon 8",
-    "cardPhoto": "/Nike Metcon 8 w/main-card.png",
+    "cardPhoto": "/Nike Metcon 8 w/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Metcon 8 w/main.png",
+        "src": "/Nike Metcon 8 w/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Metcon 8 w/both.png",
+        "src": "/Nike Metcon 8 w/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Metcon 8 w/down.png",
+        "src": "/Nike Metcon 8 w/down.webp",
         "id": 3
       }
     ],
@@ -315,18 +315,18 @@
   },
   {
     "name": "Kyrie Low 5",
-    "cardPhoto": "/Kyrie Low 5/main-card.png",
+    "cardPhoto": "/Kyrie Low 5/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Kyrie Low 5/main.png",
+        "src": "/Kyrie Low 5/main.webp",
         "id": 1
       },
       {
-        "src": "/Kyrie Low 5/both.png",
+        "src": "/Kyrie Low 5/both.webp",
         "id": 2
       },
       {
-        "src": "/Kyrie Low 5/down.png",
+        "src": "/Kyrie Low 5/down.webp",
         "id": 3
       }
     ],
@@ -339,18 +339,18 @@
   },
   {
     "name": "Air Max Terrascape Plus",
-    "cardPhoto": "/Nike Air Max Terrascape Plus/main-card.png",
+    "cardPhoto": "/Nike Air Max Terrascape Plus/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Max Terrascape Plus/main.png",
+        "src": "/Nike Air Max Terrascape Plus/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Max Terrascape Plus/both.png",
+        "src": "/Nike Air Max Terrascape Plus/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Max Terrascape Plus/down.png",
+        "src": "/Nike Air Max Terrascape Plus/down.webp",
         "id": 3
       }
     ],
@@ -363,18 +363,18 @@
   },
   {
     "name": "Air Max Plus",
-    "cardPhoto": "/Nike Air Max Plus/main-card.png",
+    "cardPhoto": "/Nike Air Max Plus/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Air Max Plus/main.png",
+        "src": "/Nike Air Max Plus/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Air Max Plus/both.png",
+        "src": "/Nike Air Max Plus/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Air Max Plus/down.png",
+        "src": "/Nike Air Max Plus/down.webp",
         "id": 3
       }
     ],
@@ -387,18 +387,18 @@
   },
   {
     "name": "Lunar Force",
-    "cardPhoto": "/Nike Lunar Force/main-card.png",
+    "cardPhoto": "/Nike Lunar Force/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike Lunar Force/main.png",
+        "src": "/Nike Lunar Force/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike Lunar Force/both.png",
+        "src": "/Nike Lunar Force/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike Lunar Force/down.png",
+        "src": "/Nike Lunar Force/down.webp",
         "id": 3
       }
     ],
@@ -411,18 +411,18 @@
   },
   {
     "name": "SFB 6 Leather",
-    "cardPhoto": "/Nike SFB 6 Leather/main-card.png",
+    "cardPhoto": "/Nike SFB 6 Leather/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/Nike SFB 6 Leather/main.png",
+        "src": "/Nike SFB 6 Leather/main.webp",
         "id": 1
       },
       {
-        "src": "/Nike SFB 6 Leather/both.png",
+        "src": "/Nike SFB 6 Leather/both.webp",
         "id": 2
       },
       {
-        "src": "/Nike SFB 6 Leather/down.png",
+        "src": "/Nike SFB 6 Leather/down.webp",
         "id": 3
       }
     ],
@@ -435,18 +435,18 @@
   },
   {
     "name": "Air Vapormax Plus",
-    "cardPhoto": "/nike-air-vapormax-plus/main-card.png",
+    "cardPhoto": "/nike-air-vapormax-plus/main-card.webp",
     "secondaryPhotos": [
       {
-        "src": "/nike-air-vapormax-plus/main.png",
+        "src": "/nike-air-vapormax-plus/main.webp",
         "id": 1
       },
       {
-        "src": "/nike-air-vapormax-plus/both.png",
+        "src": "/nike-air-vapormax-plus/both.webp",
         "id": 2
       },
       {
-        "src": "/nike-air-vapormax-plus/down.png",
+        "src": "/nike-air-vapormax-plus/down.webp",
         "id": 3
       }
     ],
