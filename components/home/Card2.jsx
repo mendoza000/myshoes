@@ -50,6 +50,7 @@ const Card2 = ({ name, secondaryPhotos, id, price, rating, isInSlider }) => {
         <button
           onClick={handleAddToFav}
           className="absolute z-10 rounded-md shadow-md left-2 top-2"
+          name="Add to favorites"
         >
           <HiOutlineHeart
             className={`w-8 h-8 stroke-buttons_main ${

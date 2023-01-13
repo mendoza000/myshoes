@@ -70,12 +70,13 @@ const Slider = () => {
   };
 
   return (
-    <div className="flex relative gap-3 px-5 w-full h-56 overflow-hidden mt-7 max-w-[400px] mx-auto ">
+    <div className="flex relative gap-3 sm:px-5 w-full h-56 overflow-hidden mt-7 max-w-[400px] mx-auto ">
       <button
         className="grid place-content-center absolute z-20 hover:bg-gradient-to-r hover:from-[rgba(25,25,25,0.1)]
         hover:to-transparent h-full w-20 top-0 left-0"
         onClick={handlePrevIndex}
         disabled={isDisabled}
+        name="Move to left"
       >
         <FaAngleLeft className="w-16 h-16 opacity-90 fill-fonts_main" />
       </button>
@@ -83,7 +84,7 @@ const Slider = () => {
         return (
           <div
             key={shoe.id}
-            className={`w-[200px] transition-all duration-300 absolute ${shoe.isActualLeft
+            className={`w-[200px] transition-all duration-200 ease-linear absolute ${shoe.isActualLeft
                 ? "left-0 -translate-x-0 "
                 : ""
               }
@@ -107,6 +108,7 @@ const Slider = () => {
         hover:to-[rgba(25,25,25,0.1)] hover:from-transparent"
         onClick={handleNextIndex}
         disabled={isDisabled}
+        name='Move to right'
       >
         <FaAngleRight className="w-16 h-16 opacity-90 fill-fonts_main" />
       </button>
