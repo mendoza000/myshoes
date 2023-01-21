@@ -1,7 +1,7 @@
 import Card from "@components/cart/Card";
 import AlertInfo from "@components/ui/AlertInfo";
 import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { HiOutlineCreditCard } from "react-icons/hi";
 import InfoPayMd from "@components/cart/InfoPayMd";
 
