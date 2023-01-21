@@ -2,16 +2,13 @@ import data from "./api/data.json";
 import "animate.css";
 import { useEffect } from "react";
 import useImages from "hooks/useImages";
-import { useDispatch } from "react-redux";
 import Slider from "@components/ui/Slider";
 import Card2 from "@components/home/Card2";
 import Header from "@components/home/Header";
 import PromoSection from "@components/home/PromoSection";
-import Head from 'next/head'
 
 export default function Home() {
-  const dispatch = useDispatch();
-  const { imagesLoaded, imagesLoadError } = useImages({ data });
+  const { imagesLoaded } = useImages({ data });
 
   useEffect(() => {
     const bottomNav = document.querySelector(".bottom-navbar");
@@ -21,12 +18,6 @@ export default function Home() {
   return (
     <>
       <div>
-        <Head>
-          <title>Myshoes Page</title>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta name="description" content="E-Commerce made as a practice" />
-        </Head>
       </div>
       <div
         className={`fixed h-screen w-screen grid place-content-center z-[100] pointer-events-all translate-y-none transition-transform 
